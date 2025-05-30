@@ -159,7 +159,22 @@ export const th: Translations = {
     transactionTakingLonger: 'ธุรกรรมของคุณใช้เวลานานกว่าที่คาดไว้',
     wouldYouLikeToTryAgain: 'คุณต้องการลองอีกครั้งหรือไม่?',
     cancel: 'ยกเลิก',
-    tryAgain: 'ลองอีกครั้ง'
+    tryAgain: 'ลองอีกครั้ง',
+    aboutTokenTitle: 'ได้รับความไว้วางใจจากผู้ใช้หลายล้านคนตั้งแต่ปี 2021',
+    aboutTokenRatedBy: 'คะแนนจาก',
+    aboutTokenTrustScore: 'คะแนนความน่าเชื่อถือ $Fepe Token',
+    aboutTokenTrustNetTitle: 'TrustNet',
+    aboutTokenTrustNetScore: 'คะแนน',
+    aboutTokenTrustNetDesc: 'คะแนน TrustNet ประเมินโปรเจกต์คริปโตตามผลการตรวจสอบ ความปลอดภัย การยืนยันตัวตน KYC และการมีอยู่ในโซเชียลมีเดีย คะแนนนี้ให้มุมมองที่รวดเร็วและโปร่งใสเกี่ยวกับความน่าเชื่อถือของโปรเจกต์ ช่วยให้ผู้ใช้ตัดสินใจอย่างมีข้อมูลในพื้นที่ Web3',
+    aboutTokenTrustNetPoor: 'แย่',
+    aboutTokenTrustNetExcellent: 'ดีเยี่ยม',
+    aboutTokenScoreLiquidity: 'สภาพคล่อง',
+    aboutTokenScoreScale: 'ขนาด',
+    aboutTokenScoreSecurity: 'ความปลอดภัยทางไซเบอร์',
+    aboutTokenScoreAPI: 'การครอบคลุม API',
+    aboutTokenScoreTeam: 'ทีม',
+    aboutTokenScoreIncident: 'เหตุการณ์',
+    aboutTokenScoreRoR: 'RoR'
 };
 
 

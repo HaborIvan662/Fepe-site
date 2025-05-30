@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import type { Language } from '../translations/languages';
 
 interface LanguageContextType {
@@ -9,7 +9,16 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [selectedLanguageCode, setSelectedLanguageCode] = useState<Language>('en');
+  const [selectedLanguageCode, setSelectedLanguageCode] = useState<Language>(() => {
+    // Try to get the language from localStorage, fallback to 'en' if not found
+    const savedLanguage = localStorage.getItem('selectedLanguage') as Language;
+    return savedLanguage || 'en';
+  });
+
+  // Update localStorage when language changes
+  useEffect(() => {
+    localStorage.setItem('selectedLanguage', selectedLanguageCode);
+  }, [selectedLanguageCode]);
   
   return (
     <LanguageContext.Provider value={{ selectedLanguageCode, setSelectedLanguageCode }}>

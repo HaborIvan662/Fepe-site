@@ -155,11 +155,26 @@ export const ro: Translations = {
   menuHowToBuy: 'Cum să cumperi',
   menuFaqs: 'Întrebări frecvente',
   menuBuyFEPE: 'Cumpără $FEPE',
-  transactionPending: 'Tranzacție în curs',
-  transactionTakingLonger: 'Tranzacția durează mai mult decât era de așteptat.',
+  transactionPending: 'Tranzacție în procesare',
+  transactionTakingLonger: 'Tranzacția dvs. durează mai mult decât era de așteptat.',
   wouldYouLikeToTryAgain: 'Doriți să încercați din nou?',
   cancel: 'Anulare',
-  tryAgain: 'Încearcă din nou'
+  tryAgain: 'Încercați din nou',
+  aboutTokenTitle: 'De încredere pentru milioane din 2021',
+  aboutTokenRatedBy: 'Evaluat de',
+  aboutTokenTrustScore: 'Scor de încredere $Fepe Token',
+  aboutTokenTrustNetTitle: 'TrustNet',
+  aboutTokenTrustNetScore: 'Scor',
+  aboutTokenTrustNetDesc: 'Scorul TrustNet evaluează proiectele crypto pe baza rezultatelor auditului, securității, verificării KYC și prezenței pe rețelele sociale. Acest scor oferă o privire rapidă și transparentă asupra fiabilității proiectului, ajutând utilizatorii să ia decizii informate în spațiul Web3.',
+  aboutTokenTrustNetPoor: 'Slab',
+  aboutTokenTrustNetExcellent: 'Excelent',
+  aboutTokenScoreLiquidity: 'Lichiditate',
+  aboutTokenScoreScale: 'Scală',
+  aboutTokenScoreSecurity: 'Securitate Cibernetică',
+  aboutTokenScoreAPI: 'Acoperire API',
+  aboutTokenScoreTeam: 'Echipă',
+  aboutTokenScoreIncident: 'Incidente',
+  aboutTokenScoreRoR: 'RoR'
 };
 
 

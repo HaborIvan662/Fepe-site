@@ -159,7 +159,22 @@ export const cz: Translations = {
   transactionTakingLonger: 'Vaše transakce trvá déle, než se očekávalo.',
   wouldYouLikeToTryAgain: 'Chcete to zkusit znovu?',
   cancel: 'Zrušit',
-  tryAgain: 'Zkusit znovu'
+  tryAgain: 'Zkusit znovu',
+  aboutTokenTitle: 'O Tokenu',
+  aboutTokenRatedBy: 'Hodnoceno od',
+  aboutTokenTrustScore: 'Skóre důvěryhodnosti',
+  aboutTokenTrustNetTitle: 'Síť důvěry',
+  aboutTokenTrustNetScore: '90.00',
+  aboutTokenTrustNetDesc: 'Komplexní hodnocení spolehlivosti a bezpečnosti projektu',
+  aboutTokenTrustNetPoor: 'Špatné',
+  aboutTokenTrustNetExcellent: 'Výborné',
+  aboutTokenScoreLiquidity: 'Likvidita',
+  aboutTokenScoreScale: 'Měřítko',
+  aboutTokenScoreSecurity: 'Bezpečnost',
+  aboutTokenScoreAPI: 'API',
+  aboutTokenScoreTeam: 'Tým',
+  aboutTokenScoreIncident: 'Incidenty',
+  aboutTokenScoreRoR: 'Míra návratnosti',
 };
 
 

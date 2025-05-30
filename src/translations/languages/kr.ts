@@ -159,7 +159,22 @@ export const kr: Translations = {
     transactionTakingLonger: '거래가 예상보다 오래 걸리고 있습니다.',
     wouldYouLikeToTryAgain: '다시 시도하시겠습니까?',
     cancel: '취소',
-    tryAgain: '다시 시도'
+    tryAgain: '다시 시도',
+    aboutTokenTitle: '2021년부터 수백만 사용자의 신뢰를 받고 있습니다',
+    aboutTokenRatedBy: '평가 기관',
+    aboutTokenTrustScore: '$Fepe 토큰 신뢰도 점수',
+    aboutTokenTrustNetTitle: 'TrustNet',
+    aboutTokenTrustNetScore: '점수',
+    aboutTokenTrustNetDesc: 'TrustNet 점수는 감사 결과, 보안, KYC 검증 및 소셜 미디어 존재를 기반으로 암호화폐 프로젝트를 평가합니다. 이 점수는 Web3 공간에서 사용자가 정보에 기반한 결정을 내리는 데 도움을 주며, 프로젝트의 신뢰성에 대한 빠르고 투명한 시각을 제공합니다.',
+    aboutTokenTrustNetPoor: '낮음',
+    aboutTokenTrustNetExcellent: '우수',
+    aboutTokenScoreLiquidity: '유동성',
+    aboutTokenScoreScale: '규모',
+    aboutTokenScoreSecurity: '사이버 보안',
+    aboutTokenScoreAPI: 'API 커버리지',
+    aboutTokenScoreTeam: '팀',
+    aboutTokenScoreIncident: '사고',
+    aboutTokenScoreRoR: 'RoR'
 };
 
 

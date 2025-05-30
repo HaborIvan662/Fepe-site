@@ -159,7 +159,22 @@ export const ar: Translations = {
     transactionTakingLonger: 'معاملتك تستغرق وقتاً أطول من المتوقع.',
     wouldYouLikeToTryAgain: 'هل تريد المحاولة مرة أخرى؟',
     cancel: 'إلغاء',
-    tryAgain: 'حاول مرة أخرى'
+    tryAgain: 'حاول مرة أخرى',
+    aboutTokenTitle: 'عن التوكن',
+    aboutTokenRatedBy: 'تم تقييمه بواسطة',
+    aboutTokenTrustScore: 'درجة الثقة',
+    aboutTokenTrustNetTitle: 'شبكة الثقة',
+    aboutTokenTrustNetScore: '90.00',
+    aboutTokenTrustNetDesc: 'تقييم شامل لموثوقية المشروع وأمانه',
+    aboutTokenTrustNetPoor: 'ضعيف',
+    aboutTokenTrustNetExcellent: 'ممتاز',
+    aboutTokenScoreLiquidity: 'السيولة',
+    aboutTokenScoreScale: 'النطاق',
+    aboutTokenScoreSecurity: 'الأمان',
+    aboutTokenScoreAPI: 'واجهة برمجة التطبيقات',
+    aboutTokenScoreTeam: 'الفريق',
+    aboutTokenScoreIncident: 'الحوادث',
+    aboutTokenScoreRoR: 'معدل العائد',
 };
 
 export default ar; 

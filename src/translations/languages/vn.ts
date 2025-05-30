@@ -155,11 +155,26 @@ export const vn: Translations = {
   menuHowToBuy: 'Cách mua',
   menuFaqs: 'Câu hỏi thường gặp',
   menuBuyFEPE: 'Mua $FEPE',
-  transactionPending: 'Giao dịch Đang Xử lý',
+  transactionPending: 'Giao dịch đang xử lý',
   transactionTakingLonger: 'Giao dịch của bạn đang mất nhiều thời gian hơn dự kiến.',
   wouldYouLikeToTryAgain: 'Bạn có muốn thử lại không?',
   cancel: 'Hủy',
-  tryAgain: 'Thử Lại'
+  tryAgain: 'Thử lại',
+  aboutTokenTitle: 'Được tin tưởng bởi hàng triệu người từ năm 2021',
+  aboutTokenRatedBy: 'Đánh giá bởi',
+  aboutTokenTrustScore: 'Điểm tin cậy $Fepe Token',
+  aboutTokenTrustNetTitle: 'TrustNet',
+  aboutTokenTrustNetScore: 'Điểm',
+  aboutTokenTrustNetDesc: 'Điểm TrustNet đánh giá các dự án tiền điện tử dựa trên kết quả kiểm toán, bảo mật, xác minh KYC và sự hiện diện trên mạng xã hội. Điểm số này cung cấp cái nhìn nhanh chóng, minh bạch về độ tin cậy của dự án, giúp người dùng đưa ra quyết định sáng suốt trong không gian Web3.',
+  aboutTokenTrustNetPoor: 'Kém',
+  aboutTokenTrustNetExcellent: 'Xuất sắc',
+  aboutTokenScoreLiquidity: 'Thanh khoản',
+  aboutTokenScoreScale: 'Quy mô',
+  aboutTokenScoreSecurity: 'Bảo mật',
+  aboutTokenScoreAPI: 'Phạm vi API',
+  aboutTokenScoreTeam: 'Đội ngũ',
+  aboutTokenScoreIncident: 'Sự cố',
+  aboutTokenScoreRoR: 'RoR'
 };
 
 export default vn; 

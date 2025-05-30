@@ -155,11 +155,26 @@ export const uk: Translations = {
     menuHowToBuy: 'Як купити',
     menuFaqs: 'Питання',
     menuBuyFEPE: 'Купити $FEPE',
-    transactionPending: 'Транзакція в обробці',
+    transactionPending: 'Транзакція обробляється',
     transactionTakingLonger: 'Ваша транзакція займає більше часу, ніж очікувалося.',
-    wouldYouLikeToTryAgain: 'Бажаєте спробувати ще раз?',
+    wouldYouLikeToTryAgain: 'Хочете спробувати ще раз?',
     cancel: 'Скасувати',
-    tryAgain: 'Спробувати ще раз'
+    tryAgain: 'Спробувати ще раз',
+    aboutTokenTitle: 'Довіряють мільйони з 2021 року',
+    aboutTokenRatedBy: 'Оцінка від',
+    aboutTokenTrustScore: 'Рейтинг довіри $Fepe Token',
+    aboutTokenTrustNetTitle: 'TrustNet',
+    aboutTokenTrustNetScore: 'Рейтинг',
+    aboutTokenTrustNetDesc: 'Рейтинг TrustNet оцінює криптопроекти на основі результатів аудиту, безпеки, верифікації KYC та присутності в соціальних мережах. Цей рейтинг пропонує швидкий, прозорий погляд на надійність проекту, допомагаючи користувачам приймати обґрунтовані рішення в просторі Web3.',
+    aboutTokenTrustNetPoor: 'Погано',
+    aboutTokenTrustNetExcellent: 'Відмінно',
+    aboutTokenScoreLiquidity: 'Ліквідність',
+    aboutTokenScoreScale: 'Масштаб',
+    aboutTokenScoreSecurity: 'Кібербезпека',
+    aboutTokenScoreAPI: 'API-покриття',
+    aboutTokenScoreTeam: 'Команда',
+    aboutTokenScoreIncident: 'Інциденти',
+    aboutTokenScoreRoR: 'RoR'
 };
 
 

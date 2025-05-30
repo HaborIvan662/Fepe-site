@@ -159,7 +159,22 @@ export const cn: Translations = {
     transactionTakingLonger: '您的交易正在花费比预期更长的时间。',
     wouldYouLikeToTryAgain: '您想要重试吗？',
     cancel: '取消',
-    tryAgain: '重试'
+    tryAgain: '重试',
+    aboutTokenTitle: '关于代币',
+    aboutTokenRatedBy: '评级来源',
+    aboutTokenTrustScore: '信任分数',
+    aboutTokenTrustNetTitle: '信任网络',
+    aboutTokenTrustNetScore: '90.00',
+    aboutTokenTrustNetDesc: '项目可靠性和安全性的综合评估',
+    aboutTokenTrustNetPoor: '差',
+    aboutTokenTrustNetExcellent: '优秀',
+    aboutTokenScoreLiquidity: '流动性',
+    aboutTokenScoreScale: '规模',
+    aboutTokenScoreSecurity: '安全性',
+    aboutTokenScoreAPI: 'API',
+    aboutTokenScoreTeam: '团队',
+    aboutTokenScoreIncident: '事件',
+    aboutTokenScoreRoR: '回报率',
 };
 
 

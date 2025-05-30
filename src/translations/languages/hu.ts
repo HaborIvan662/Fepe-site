@@ -155,11 +155,26 @@ export const hu: Translations = {
     menuHowToBuy: 'Hogyan vásárolj',
     menuFaqs: 'GYIK',
     menuBuyFEPE: '$FEPE vásárlás',
-    transactionPending: 'Tranzakció folyamatban',
-    transactionTakingLonger: 'A tranzakció tovább tart a vártnál.',
-    wouldYouLikeToTryAgain: 'Szeretné újra megpróbálni?',
+    transactionPending: 'Tranzakció feldolgozása',
+    transactionTakingLonger: 'A tranzakció tovább tart, mint vártuk.',
+    wouldYouLikeToTryAgain: 'Szeretné újra próbálni?',
     cancel: 'Mégse',
-    tryAgain: 'Újra próbál'
+    tryAgain: 'Újra próbál',
+    aboutTokenTitle: 'Milliók bizalma 2021 óta',
+    aboutTokenRatedBy: 'Értékelte',
+    aboutTokenTrustScore: '$Fepe Token Megbízhatósági Pontszám',
+    aboutTokenTrustNetTitle: 'TrustNet',
+    aboutTokenTrustNetScore: 'Pontszám',
+    aboutTokenTrustNetDesc: 'A TrustNet pontszám a kripto projekteket audit eredmények, biztonság, KYC ellenőrzés és közösségi média jelenlét alapján értékeli. Ez a pontszám gyors és átlátható betekintést nyújt a projekt megbízhatóságába, segítve a felhasználókat a tájékozott döntések meghozatalában a Web3 térben.',
+    aboutTokenTrustNetPoor: 'Gyenge',
+    aboutTokenTrustNetExcellent: 'Kiváló',
+    aboutTokenScoreLiquidity: 'Likviditás',
+    aboutTokenScoreScale: 'Méret',
+    aboutTokenScoreSecurity: 'Kiberbiztonság',
+    aboutTokenScoreAPI: 'API Lefedettség',
+    aboutTokenScoreTeam: 'Csapat',
+    aboutTokenScoreIncident: 'Incidensek',
+    aboutTokenScoreRoR: 'RoR'
 };
 
 

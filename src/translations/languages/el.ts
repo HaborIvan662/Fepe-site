@@ -159,7 +159,22 @@ export const el: Translations = {
     transactionTakingLonger: 'Η συναλλαγή σας διαρκεί περισσότερο από το αναμενόμενο.',
     wouldYouLikeToTryAgain: 'Θέλετε να δοκιμάσετε ξανά;',
     cancel: 'Ακύρωση',
-    tryAgain: 'Δοκιμάστε ξανά'
+    tryAgain: 'Δοκιμάστε ξανά',
+    aboutTokenTitle: 'Σχετικά με το Token',
+    aboutTokenRatedBy: 'Αξιολογήθηκε από',
+    aboutTokenTrustScore: 'Βαθμολογία Αξιοπιστίας',
+    aboutTokenTrustNetTitle: 'Δίκτυο Εμπιστοσύνης',
+    aboutTokenTrustNetScore: '90.00',
+    aboutTokenTrustNetDesc: 'Πολύπλευρη αξιολόγηση της αξιοπιστίας και της ασφάλειας του έργου',
+    aboutTokenTrustNetPoor: 'Κακή',
+    aboutTokenTrustNetExcellent: 'Εξαιρετική',
+    aboutTokenScoreLiquidity: 'Ρευστότητα',
+    aboutTokenScoreScale: 'Κλίμακα',
+    aboutTokenScoreSecurity: 'Ασφάλεια',
+    aboutTokenScoreAPI: 'API',
+    aboutTokenScoreTeam: 'Ομάδα',
+    aboutTokenScoreIncident: 'Συμβάντα',
+    aboutTokenScoreRoR: 'Ποσοστό Επιστροφής',
 };
 
 

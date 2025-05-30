@@ -159,7 +159,22 @@ export const ru: Translations = {
     transactionTakingLonger: 'Ваша транзакция занимает больше времени, чем ожидалось.',
     wouldYouLikeToTryAgain: 'Хотите попробовать снова?',
     cancel: 'Отмена',
-    tryAgain: 'Попробовать снова'
+    tryAgain: 'Попробовать снова',
+    aboutTokenTitle: 'Доверяют миллионы с 2021 года',
+    aboutTokenRatedBy: 'Оценка от',
+    aboutTokenTrustScore: 'Рейтинг доверия $Fepe Token',
+    aboutTokenTrustNetTitle: 'TrustNet',
+    aboutTokenTrustNetScore: 'Рейтинг',
+    aboutTokenTrustNetDesc: 'Рейтинг TrustNet оценивает криптопроекты на основе результатов аудита, безопасности, верификации KYC и присутствия в социальных сетях. Этот рейтинг предлагает быстрый и прозрачный взгляд на надежность проекта, помогая пользователям принимать обоснованные решения в пространстве Web3.',
+    aboutTokenTrustNetPoor: 'Плохо',
+    aboutTokenTrustNetExcellent: 'Отлично',
+    aboutTokenScoreLiquidity: 'Ликвидность',
+    aboutTokenScoreScale: 'Масштаб',
+    aboutTokenScoreSecurity: 'Кибербезопасность',
+    aboutTokenScoreAPI: 'API-покрытие',
+    aboutTokenScoreTeam: 'Команда',
+    aboutTokenScoreIncident: 'Инциденты',
+    aboutTokenScoreRoR: 'RoR'
 };
 
 export default ru; 

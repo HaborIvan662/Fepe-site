@@ -155,11 +155,26 @@ export const id: Translations = {
     menuHowToBuy: 'Cara Membeli',
     menuFaqs: 'FAQ',
     menuBuyFEPE: 'Beli $FEPE',
-    transactionPending: 'Transaksi Dalam Proses',
+    transactionPending: 'Memproses transaksi',
     transactionTakingLonger: 'Transaksi Anda membutuhkan waktu lebih lama dari yang diharapkan.',
     wouldYouLikeToTryAgain: 'Apakah Anda ingin mencoba lagi?',
     cancel: 'Batal',
-    tryAgain: 'Coba Lagi'
+    tryAgain: 'Coba Lagi',
+    aboutTokenTitle: 'Dipercaya oleh jutaan sejak 2021',
+    aboutTokenRatedBy: 'Dinilai oleh',
+    aboutTokenTrustScore: 'Skor Kepercayaan Token $Fepe',
+    aboutTokenTrustNetTitle: 'TrustNet',
+    aboutTokenTrustNetScore: 'Skor',
+    aboutTokenTrustNetDesc: 'Skor TrustNet mengevaluasi proyek crypto berdasarkan hasil audit, keamanan, verifikasi KYC, dan kehadiran di media sosial. Skor ini memberikan pandangan cepat dan transparan tentang keandalan proyek, membantu pengguna membuat keputusan yang tepat di ruang Web3.',
+    aboutTokenTrustNetPoor: 'Buruk',
+    aboutTokenTrustNetExcellent: 'Sangat Baik',
+    aboutTokenScoreLiquidity: 'Likuiditas',
+    aboutTokenScoreScale: 'Skala',
+    aboutTokenScoreSecurity: 'Keamanan Siber',
+    aboutTokenScoreAPI: 'Cakupan API',
+    aboutTokenScoreTeam: 'Tim',
+    aboutTokenScoreIncident: 'Insiden',
+    aboutTokenScoreRoR: 'RoR'
 };
 
 export default id; 

@@ -156,10 +156,25 @@ export const zhHant: Translations = {
     menuFaqs: '常見問題',
     menuBuyFEPE: '購買 $FEPE',
     transactionPending: '交易處理中',
-    transactionTakingLonger: '您的交易正在花費比預期更長的時間。',
+    transactionTakingLonger: '您的交易處理時間比預期長。',
     wouldYouLikeToTryAgain: '您要重試嗎？',
     cancel: '取消',
-    tryAgain: '重試'
+    tryAgain: '重試',
+    aboutTokenTitle: '自2021年以來獲得數百萬用戶信任',
+    aboutTokenRatedBy: '評分來自',
+    aboutTokenTrustScore: '$Fepe代幣信任評分',
+    aboutTokenTrustNetTitle: 'TrustNet',
+    aboutTokenTrustNetScore: '評分',
+    aboutTokenTrustNetDesc: 'TrustNet評分基於審計結果、安全性、KYC驗證和社交媒體存在來評估加密項目。此評分提供快速、透明的項目可信度視圖，幫助用戶在Web3空間做出明智決策。',
+    aboutTokenTrustNetPoor: '差',
+    aboutTokenTrustNetExcellent: '優',
+    aboutTokenScoreLiquidity: '流動性',
+    aboutTokenScoreScale: '規模',
+    aboutTokenScoreSecurity: '網絡安全',
+    aboutTokenScoreAPI: 'API覆蓋',
+    aboutTokenScoreTeam: '團隊',
+    aboutTokenScoreIncident: '事件',
+    aboutTokenScoreRoR: 'RoR'
 };
 
 export default zhHant; 

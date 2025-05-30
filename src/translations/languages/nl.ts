@@ -155,11 +155,26 @@ export const nl: Translations = {
     menuHowToBuy: 'Hoe te kopen',
     menuFaqs: 'Veelgestelde vragen',
     menuBuyFEPE: 'Koop $FEPE',
-    transactionPending: 'Transactie in behandeling',
+    transactionPending: 'Transactie wordt verwerkt',
     transactionTakingLonger: 'Uw transactie duurt langer dan verwacht.',
     wouldYouLikeToTryAgain: 'Wilt u het opnieuw proberen?',
     cancel: 'Annuleren',
-    tryAgain: 'Opnieuw proberen'
+    tryAgain: 'Opnieuw proberen',
+    aboutTokenTitle: 'Vertrouwd door miljoenen sinds 2021',
+    aboutTokenRatedBy: 'Beoordeeld door',
+    aboutTokenTrustScore: '$Fepe Token Vertrouwensscore',
+    aboutTokenTrustNetTitle: 'TrustNet',
+    aboutTokenTrustNetScore: 'Score',
+    aboutTokenTrustNetDesc: 'De TrustNet-score evalueert crypto-projecten op basis van auditresultaten, beveiliging, KYC-verificatie en aanwezigheid op sociale media. Deze score biedt een snelle en transparante kijk op de betrouwbaarheid van het project, waardoor gebruikers geïnformeerde beslissingen kunnen nemen in de Web3-ruimte.',
+    aboutTokenTrustNetPoor: 'Slecht',
+    aboutTokenTrustNetExcellent: 'Uitstekend',
+    aboutTokenScoreLiquidity: 'Liquiditeit',
+    aboutTokenScoreScale: 'Schaal',
+    aboutTokenScoreSecurity: 'Cyberbeveiliging',
+    aboutTokenScoreAPI: 'API-dekking',
+    aboutTokenScoreTeam: 'Team',
+    aboutTokenScoreIncident: 'Incidenten',
+    aboutTokenScoreRoR: 'RoR'
 };
 
 

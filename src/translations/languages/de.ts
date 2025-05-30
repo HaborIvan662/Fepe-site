@@ -155,11 +155,26 @@ export const de: Translations = {
     menuHowToBuy: 'Wie kaufen',
     menuFaqs: 'FAQs',
     menuBuyFEPE: '$FEPE kaufen',
-    transactionPending: 'Transaktion in Bearbeitung',
+    transactionPending: 'Transaktion wird verarbeitet',
     transactionTakingLonger: 'Ihre Transaktion dauert länger als erwartet.',
     wouldYouLikeToTryAgain: 'Möchten Sie es erneut versuchen?',
     cancel: 'Abbrechen',
-    tryAgain: 'Erneut versuchen'
+    tryAgain: 'Erneut versuchen',
+    aboutTokenTitle: 'Vertraut von Millionen seit 2021',
+    aboutTokenRatedBy: 'Bewertet von',
+    aboutTokenTrustScore: 'Vertrauenswertung $Fepe Token',
+    aboutTokenTrustNetTitle: 'TrustNet',
+    aboutTokenTrustNetScore: 'Bewertung',
+    aboutTokenTrustNetDesc: 'Die TrustNet-Bewertung bewertet Krypto-Projekte auf Basis von Audit-Ergebnissen, Sicherheit, KYC-Verifizierung und Präsenz in sozialen Medien. Diese Bewertung bietet einen schnellen und transparenten Einblick in die Zuverlässigkeit des Projekts und hilft Nutzern, fundierte Entscheidungen im Web3-Bereich zu treffen.',
+    aboutTokenTrustNetPoor: 'Schwach',
+    aboutTokenTrustNetExcellent: 'Ausgezeichnet',
+    aboutTokenScoreLiquidity: 'Liquidität',
+    aboutTokenScoreScale: 'Skala',
+    aboutTokenScoreSecurity: 'Cybersicherheit',
+    aboutTokenScoreAPI: 'API-Abdeckung',
+    aboutTokenScoreTeam: 'Team',
+    aboutTokenScoreIncident: 'Vorfälle',
+    aboutTokenScoreRoR: 'RoR'
 };
 
 

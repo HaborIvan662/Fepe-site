@@ -155,11 +155,26 @@ export const sk: Translations = {
   menuHowToBuy: 'Ako kúpiť',
   menuFaqs: 'Časté otázky',
   menuBuyFEPE: 'Kúpiť $FEPE',
-  transactionPending: 'Transakcia prebieha',
+  transactionPending: 'Transakcia sa spracováva',
   transactionTakingLonger: 'Vaša transakcia trvá dlhšie, ako sa očakávalo.',
   wouldYouLikeToTryAgain: 'Chcete to skúsiť znova?',
   cancel: 'Zrušiť',
-  tryAgain: 'Skúsiť znova'
+  tryAgain: 'Skúsiť znova',
+  aboutTokenTitle: 'Dôverujú milióny od roku 2021',
+  aboutTokenRatedBy: 'Hodnotené podľa',
+  aboutTokenTrustScore: 'Skóre dôveryhodnosti $Fepe Token',
+  aboutTokenTrustNetTitle: 'TrustNet',
+  aboutTokenTrustNetScore: 'Skóre',
+  aboutTokenTrustNetDesc: 'Skóre TrustNet hodnotí krypto projekty na základe výsledkov auditu, bezpečnosti, KYC overenia a prítomnosti na sociálnych sieťach. Toto skóre poskytuje rýchly a transparentný pohľad na spoľahlivosť projektu, pomáhajúc používateľom prijímať informované rozhodnutia v priestore Web3.',
+  aboutTokenTrustNetPoor: 'Zlé',
+  aboutTokenTrustNetExcellent: 'Výborné',
+  aboutTokenScoreLiquidity: 'Likvidita',
+  aboutTokenScoreScale: 'Mierka',
+  aboutTokenScoreSecurity: 'Kybernetická bezpečnosť',
+  aboutTokenScoreAPI: 'API pokrytie',
+  aboutTokenScoreTeam: 'Tím',
+  aboutTokenScoreIncident: 'Incidenty',
+  aboutTokenScoreRoR: 'RoR'
 };
 
 

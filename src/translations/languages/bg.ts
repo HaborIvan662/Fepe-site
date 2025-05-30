@@ -159,7 +159,22 @@ export const bg: Translations = {
     transactionTakingLonger: 'Вашата транзакция отнема повече време от очакваното.',
     wouldYouLikeToTryAgain: 'Искате ли да опитате отново?',
     cancel: 'Отказ',
-    tryAgain: 'Опитай отново'
+    tryAgain: 'Опитайте отново',
+    aboutTokenTitle: 'За Токена',
+    aboutTokenRatedBy: 'Оценен от',
+    aboutTokenTrustScore: 'Резултат на доверие',
+    aboutTokenTrustNetTitle: 'Мрежа за доверие',
+    aboutTokenTrustNetScore: '90.00',
+    aboutTokenTrustNetDesc: 'Цялостна оценка на надеждността и сигурността на проекта',
+    aboutTokenTrustNetPoor: 'Слаб',
+    aboutTokenTrustNetExcellent: 'Отличен',
+    aboutTokenScoreLiquidity: 'Ликвидност',
+    aboutTokenScoreScale: 'Мащаб',
+    aboutTokenScoreSecurity: 'Сигурност',
+    aboutTokenScoreAPI: 'API',
+    aboutTokenScoreTeam: 'Екип',
+    aboutTokenScoreIncident: 'Инциденти',
+    aboutTokenScoreRoR: 'Норма на възвръщаемост',
 };
 
 export default bg; 

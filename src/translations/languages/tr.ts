@@ -155,11 +155,26 @@ export const tr: Translations = {
     menuHowToBuy: 'Nasıl Alınır',
     menuFaqs: 'SSS',
     menuBuyFEPE: '$FEPE Satın Al',
-    transactionPending: 'İşlem Beklemede',
-    transactionTakingLonger: 'İşleminiz beklenenden uzun sürüyor.',
+    transactionPending: 'İşlem işleniyor',
+    transactionTakingLonger: 'İşleminiz beklenenden daha uzun sürüyor.',
     wouldYouLikeToTryAgain: 'Tekrar denemek ister misiniz?',
     cancel: 'İptal',
-    tryAgain: 'Tekrar Dene'
+    tryAgain: 'Tekrar dene',
+    aboutTokenTitle: '2021\'den beri milyonlarca kullanıcının güvenini kazanmıştır',
+    aboutTokenRatedBy: 'Değerlendiren',
+    aboutTokenTrustScore: '$Fepe Token Güven Puanı',
+    aboutTokenTrustNetTitle: 'TrustNet',
+    aboutTokenTrustNetScore: 'Puan',
+    aboutTokenTrustNetDesc: 'TrustNet puanı, kripto projelerini denetim sonuçları, güvenlik, KYC doğrulaması ve sosyal medya varlığına göre değerlendirir. Bu puan, Web3 alanında kullanıcıların bilinçli kararlar almasına yardımcı olarak, projenin güvenilirliğine hızlı ve şeffaf bir bakış sunar.',
+    aboutTokenTrustNetPoor: 'Kötü',
+    aboutTokenTrustNetExcellent: 'Mükemmel',
+    aboutTokenScoreLiquidity: 'Likidite',
+    aboutTokenScoreScale: 'Ölçek',
+    aboutTokenScoreSecurity: 'Siber Güvenlik',
+    aboutTokenScoreAPI: 'API Kapsamı',
+    aboutTokenScoreTeam: 'Ekip',
+    aboutTokenScoreIncident: 'Olaylar',
+    aboutTokenScoreRoR: 'RoR'
 };
 
 export default tr; 

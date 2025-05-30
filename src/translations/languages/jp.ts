@@ -159,7 +159,22 @@ export const jp: Translations = {
   transactionTakingLonger: '取引の処理に予想以上の時間がかかっています。',
   wouldYouLikeToTryAgain: 'もう一度試しますか？',
   cancel: 'キャンセル',
-  tryAgain: '再試行'
+  tryAgain: '再試行',
+  aboutTokenTitle: '2021年から数百万人の信頼を獲得',
+  aboutTokenRatedBy: '評価機関',
+  aboutTokenTrustScore: '$Fepeトークン信頼度スコア',
+  aboutTokenTrustNetTitle: 'TrustNet',
+  aboutTokenTrustNetScore: 'スコア',
+  aboutTokenTrustNetDesc: 'TrustNetスコアは、監査結果、セキュリティ、KYC検証、ソーシャルメディアでの存在感に基づいて暗号プロジェクトを評価します。このスコアは、Web3空間でユーザーが情報に基づいた決定を下すのに役立ち、プロジェクトの信頼性を迅速かつ透明性を持って把握することができます。',
+  aboutTokenTrustNetPoor: '低い',
+  aboutTokenTrustNetExcellent: '優れている',
+  aboutTokenScoreLiquidity: '流動性',
+  aboutTokenScoreScale: '規模',
+  aboutTokenScoreSecurity: 'サイバーセキュリティ',
+  aboutTokenScoreAPI: 'APIカバレッジ',
+  aboutTokenScoreTeam: 'チーム',
+  aboutTokenScoreIncident: 'インシデント',
+  aboutTokenScoreRoR: 'RoR'
 };
 
 
