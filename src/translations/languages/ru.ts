@@ -154,7 +154,12 @@ export const ru: Translations = {
     menuRoadmap: 'Дорожная карта',
     menuHowToBuy: 'Как купить',
     menuFaqs: 'Часто задаваемые вопросы',
-    menuBuyFEPE: 'Купить $FEPE'
+    menuBuyFEPE: 'Купить $FEPE',
+    transactionPending: 'Транзакция в обработке',
+    transactionTakingLonger: 'Ваша транзакция занимает больше времени, чем ожидалось.',
+    wouldYouLikeToTryAgain: 'Хотите попробовать снова?',
+    cancel: 'Отмена',
+    tryAgain: 'Попробовать снова'
 };
 
 

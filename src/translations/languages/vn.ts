@@ -126,7 +126,7 @@ export const vn: Translations = {
   copyright: '© 2025 Fantasy Pepe. Bảo lưu mọi quyền.',
   privacyPolicy: 'Chính sách quyền riêng tư',
   disclaimer: 'Tuyên bố miễn trừ trách nhiệm',
-  disclaimerPart1: '$FEPE là một đồng meme, không phải đầu tư. Nó được tạo ra để giải trí—không phải là lời khuyên tài chính. Giá $FEPE có thể dao động mạnh và bạn có thể mất toàn bộ. Hãy tự nghiên cứu (DYOR) và tham khảo cố vấn tài chính.',
+  disclaimerPart1: '$FEPE là một đồng meme, không phải đầu tư. Nó được tạo ra để giải trí—không phải lời khuyên tài chính. Giá $FEPE có thể dao động mạnh và bạn có thể mất toàn bộ. Hãy tự nghiên cứu (DYOR) và tham khảo cố vấn tài chính.',
   disclaimerPart2: 'Fantasy Pepe là về niềm vui, meme và hỗn loạn bóng đá—không phải để kiếm tiền. Chơi với rủi ro của bạn.',
   cookieConsentTitle: 'Tùy chỉnh cài đặt cookie',
   cookieConsentDescription: 'Chúng tôi sử dụng cookie để giúp bạn điều hướng hiệu quả và thực hiện một số chức năng. Bạn có thể xem chi tiết về tất cả cookie theo từng danh mục bên dưới.',
@@ -154,8 +154,12 @@ export const vn: Translations = {
   menuRoadmap: 'Lộ trình',
   menuHowToBuy: 'Cách mua',
   menuFaqs: 'Câu hỏi thường gặp',
-  menuBuyFEPE: 'Mua $FEPE'
+  menuBuyFEPE: 'Mua $FEPE',
+  transactionPending: 'Giao dịch Đang Xử lý',
+  transactionTakingLonger: 'Giao dịch của bạn đang mất nhiều thời gian hơn dự kiến.',
+  wouldYouLikeToTryAgain: 'Bạn có muốn thử lại không?',
+  cancel: 'Hủy',
+  tryAgain: 'Thử Lại'
 };
-
 
 export default vn; 

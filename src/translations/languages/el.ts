@@ -154,7 +154,12 @@ export const el: Translations = {
     menuRoadmap: 'Οδικός Χάρτης',
     menuHowToBuy: 'Πώς να αγοράσετε',
     menuFaqs: 'FAQs',
-    menuBuyFEPE: 'Αγορά $FEPE'
+    menuBuyFEPE: 'Αγορά $FEPE',
+    transactionPending: 'Η συναλλαγή εκκρεμεί',
+    transactionTakingLonger: 'Η συναλλαγή σας διαρκεί περισσότερο από το αναμενόμενο.',
+    wouldYouLikeToTryAgain: 'Θέλετε να δοκιμάσετε ξανά;',
+    cancel: 'Ακύρωση',
+    tryAgain: 'Δοκιμάστε ξανά'
 };
 
 

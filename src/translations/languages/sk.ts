@@ -154,7 +154,12 @@ export const sk: Translations = {
   menuRoadmap: 'Cestovná mapa',
   menuHowToBuy: 'Ako kúpiť',
   menuFaqs: 'Časté otázky',
-  menuBuyFEPE: 'Kúpiť $FEPE'
+  menuBuyFEPE: 'Kúpiť $FEPE',
+  transactionPending: 'Transakcia prebieha',
+  transactionTakingLonger: 'Vaša transakcia trvá dlhšie, ako sa očakávalo.',
+  wouldYouLikeToTryAgain: 'Chcete to skúsiť znova?',
+  cancel: 'Zrušiť',
+  tryAgain: 'Skúsiť znova'
 };
 
 

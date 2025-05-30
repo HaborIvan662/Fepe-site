@@ -154,5 +154,10 @@ export const ar: Translations = {
     menuRoadmap: 'خارطة الطريق',
     menuHowToBuy: 'كيفية الشراء',
     menuFaqs: 'الأسئلة الشائعة',
-    menuBuyFEPE: 'شراء $FEPE'
+    menuBuyFEPE: 'شراء $FEPE',
+    transactionPending: 'المعاملة قيد الانتظار',
+    transactionTakingLonger: 'معاملتك تستغرق وقتاً أطول من المتوقع.',
+    wouldYouLikeToTryAgain: 'هل تريد المحاولة مرة أخرى؟',
+    cancel: 'إلغاء',
+    tryAgain: 'حاول مرة أخرى'
 }; 

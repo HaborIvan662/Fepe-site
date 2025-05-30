@@ -154,8 +154,12 @@ export const id: Translations = {
     menuRoadmap: 'Peta Jalan',
     menuHowToBuy: 'Cara Membeli',
     menuFaqs: 'FAQ',
-    menuBuyFEPE: 'Beli $FEPE'
+    menuBuyFEPE: 'Beli $FEPE',
+    transactionPending: 'Transaksi Dalam Proses',
+    transactionTakingLonger: 'Transaksi Anda membutuhkan waktu lebih lama dari yang diharapkan.',
+    wouldYouLikeToTryAgain: 'Apakah Anda ingin mencoba lagi?',
+    cancel: 'Batal',
+    tryAgain: 'Coba Lagi'
 };
-
 
 export default id; 

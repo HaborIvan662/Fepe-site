@@ -154,7 +154,12 @@ export const kr: Translations = {
     menuRoadmap: '로드맵',
     menuHowToBuy: '구매 방법',
     menuFaqs: '자주 묻는 질문',
-    menuBuyFEPE: '$FEPE 구매'
+    menuBuyFEPE: '$FEPE 구매',
+    transactionPending: '거래 처리 중',
+    transactionTakingLonger: '거래가 예상보다 오래 걸리고 있습니다.',
+    wouldYouLikeToTryAgain: '다시 시도하시겠습니까?',
+    cancel: '취소',
+    tryAgain: '다시 시도'
 };
 
 

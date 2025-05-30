@@ -154,7 +154,12 @@ export const th: Translations = {
     menuRoadmap: 'แผนงาน',
     menuHowToBuy: 'วิธีซื้อ',
     menuFaqs: 'คำถามที่พบบ่อย',
-    menuBuyFEPE: 'ซื้อ $FEPE'
+    menuBuyFEPE: 'ซื้อ $FEPE',
+    transactionPending: 'กำลังดำเนินการธุรกรรม',
+    transactionTakingLonger: 'ธุรกรรมของคุณใช้เวลานานกว่าที่คาดไว้',
+    wouldYouLikeToTryAgain: 'คุณต้องการลองอีกครั้งหรือไม่?',
+    cancel: 'ยกเลิก',
+    tryAgain: 'ลองอีกครั้ง'
 };
 
 

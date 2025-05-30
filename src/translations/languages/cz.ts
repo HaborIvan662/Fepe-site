@@ -154,7 +154,12 @@ export const cz: Translations = {
   menuRoadmap: 'Plán',
   menuHowToBuy: 'Jak koupit',
   menuFaqs: 'FAQ',
-  menuBuyFEPE: 'Koupit $FEPE'
+  menuBuyFEPE: 'Koupit $FEPE',
+  transactionPending: 'Transakce probíhá',
+  transactionTakingLonger: 'Vaše transakce trvá déle, než se očekávalo.',
+  wouldYouLikeToTryAgain: 'Chcete to zkusit znovu?',
+  cancel: 'Zrušit',
+  tryAgain: 'Zkusit znovu'
 };
 
 

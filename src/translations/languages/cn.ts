@@ -154,7 +154,12 @@ export const cn: Translations = {
     menuRoadmap: '路线图',
     menuHowToBuy: '购买方式',
     menuFaqs: '常见问题',
-    menuBuyFEPE: '购买 $FEPE'
+    menuBuyFEPE: '购买 $FEPE',
+    transactionPending: '交易处理中',
+    transactionTakingLonger: '您的交易正在花费比预期更长的时间。',
+    wouldYouLikeToTryAgain: '您想要重试吗？',
+    cancel: '取消',
+    tryAgain: '重试'
 };
 
 

@@ -154,7 +154,12 @@ export const hu: Translations = {
     menuRoadmap: 'Ütemterv',
     menuHowToBuy: 'Hogyan vásárolj',
     menuFaqs: 'GYIK',
-    menuBuyFEPE: '$FEPE vásárlása'
+    menuBuyFEPE: '$FEPE vásárlás',
+    transactionPending: 'Tranzakció folyamatban',
+    transactionTakingLonger: 'A tranzakció tovább tart a vártnál.',
+    wouldYouLikeToTryAgain: 'Szeretné újra megpróbálni?',
+    cancel: 'Mégse',
+    tryAgain: 'Újra próbál'
 };
 
 

@@ -21,8 +21,8 @@ export const tr: Translations = {
     payWithETH: 'ETH ile Öde',
     receiveFEPE: '$FEPE Al',
     featuredIn: 'Şurada Öne Çıktı',
-    aboutText: '$FEPE, AI destekli fantezi maçları, meme turnuvaları ve kripto tahmin piyasalarıyla desteklenen en iyi futbol memecoin’idir. Bahis yap, kazan ve stake et.',
-    newsHeader: 'İSPANYOL FUTBOL KULÜPLERİ ARTIK FANTASY PEPE’Yİ DESTEKLİYOR! $FEPE TOPLAYAN KRİPTO BALİNALARI TESPİT EDİLDİ—YENİ 100X Mİ? FANTASY PEPE ÖN SATIŞI HIZLA TÜKENİYOR—YERLER HER DAKİKA AZALIYOR. CHILL GUY AZ ÖNCE $FEPE STAKE ETTİ VE UYUDU. BÜYÜKANNE BİLE $FEPE TOPLUYOR—SEN NEYİ BEKLİYORSUN?',
+    aboutText: '$FEPE, AI destekli fantezi maçları, meme turnuvaları ve kripto tahmin piyasalarıyla desteklenen en iyi futbol meme tokenidir. Bahis yap, kazan ve stake et.',
+    newsHeader: 'İSPANYOL FUTBOL KULÜPLERİ ARTIK FANTASY PEPE\'Yİ DESTEKLİYOR! $FEPE TOPLAYAN KRİPTO BALİNALARI TESPİT EDİLDİ—YENİ 100X Mİ? FANTASY PEPE ÖN SATIŞI HIZLA TÜKENİYOR—YERLER HER DAKİKA AZALIYOR. CHILL GUY AZ ÖNCE $FEPE STAKE ETTİ VE UYUDU. BÜYÜKANNE BİLE $FEPE TOPLUYOR—SEN NEYİ BEKLİYORSUN?',
     areYouSure: 'Emin misiniz?',
     bnbWarning: 'Ön satış sırasında BSC üzerinden satın alırsanız %607 yıllık staking kazancına hak kazanamazsınız. Stake etmek istiyorsanız Ethereum üzerinden satın almanız önerilir.',
     howToBuyTitle: 'Nasıl Alınır',
@@ -38,7 +38,7 @@ export const tr: Translations = {
     groupStageMatch3Summary: 'Chill Guy FC kazandı! Güçlü bir performansla Tariffs United hep geride kaldı!',
     faqTitle: 'Sıkça Sorulan Sorular',
     faqWhatIsFEPE: '$FEPE token nedir?',
-    faqWhatIsFEPEAnswer: '$FEPE, AI destekli fantezi maçları, meme turnuvaları ve kripto tahmin piyasalarıyla desteklenen en iyi futbol memecoin’idir. Bahis yap, kazan ve stake et.',
+    faqWhatIsFEPEAnswer: '$FEPE, AI destekli fantezi maçları, meme turnuvaları ve kripto tahmin piyasalarıyla desteklenen en iyi futbol meme tokenidir. Bahis yap, kazan ve stake et.',
     faqWhereToBuy: '$FEPE tokenlerini nereden alabilirim?',
     faqWhereToBuyAnswer: '$FEPE tokenlerini ön satış sırasında resmi sitemizden satın alabilirsiniz. Ön satıştan sonra Uniswap gibi merkeziyetsiz borsalarda (DEX) mevcut olacaktır.',
     faqWhenGetTokens: 'Ön satış tokenlerimi ne zaman alırım?',
@@ -48,7 +48,7 @@ export const tr: Translations = {
     faqWhyPresaleAnswer2: 'Ön satış turları her 3 günde bir fiyatı artırır, erken alıcıları ödüllendirir.',
     faqWhyPresaleAnswer3: 'Uzun vadeli sahipler için staking avantajları.',
     faqWhyBestMeme: '$FEPE neden en iyi memecoin?',
-    faqWhyBestMemeAnswer: 'Diğer memecoin’lerin aksine $FEPE, meme kültürü, fantezi futbol, AI tabanlı oyun ve güçlü bir topluluk ekonomisini birleştirerek hem eğlenceli hem de kazançlıdır.',
+    faqWhyBestMemeAnswer: 'Diğer meme tokenlerin aksine $FEPE, meme kültürü, fantezi futbol, AI tabanlı oyun ve güçlü bir topluluk ekonomisini birleştirerek hem eğlenceli hem de kazançlıdır.',
     usdtRaised: 'Toplanan USDT',
     stakingAPY: 'Staking APY',
     keyFeaturesTitle: 'Temel Özellikler',
@@ -84,7 +84,7 @@ export const tr: Translations = {
     keyFeaturesCommunityTitle: 'Degens ve futbol severlerden oluşan en büyük topluluk',
     keyFeaturesCommunityBullets: [
         'Futbol zaten büyük—hadi meme meraklılarını ve kripto yatırımcılarını dahil edelim.',
-        'En iyi tahminciler ve Fantasy Pepe VIP’leri için özel NFT ödülleri.',
+        'En iyi tahminciler ve Fantasy Pepe VIP\'leri için özel NFT ödülleri.',
         'Staking, yönetişim ve topluluk tarafından yönetilen meme takımlar!'
     ],
     roadmapTitle: 'Yol Haritası',
@@ -115,8 +115,8 @@ export const tr: Translations = {
     roadmapPhase7Bullet3: 'Küresel topluluğu genişlet',
     tokenomicsDescription: 'Sürdürülebilirlik ve büyüme için tasarlanmış tokenomik',
     tokenomicsTotalSupply: 'Toplam Arz: 125.000.000.000 $FEPE',
-    tokenomicsPresale: 'Özel veya tohum satışı yok—$FEPE halka açık ön satışla $0,0003’ten başlar, her 3 günde bir artar, toplam 30 tur',
-    tokenomicsStages: 'Tükenene kadar turlar (toplam arzın %20’si). Kabul edilen ödeme yöntemleri: ETH, BNB, USDT veya banka/kredi kartı.',
+    tokenomicsPresale: 'Özel veya tohum satışı yok—$FEPE halka açık ön satışla $0.0003\'ten başlar, her 3 günde bir artar, toplam 30 tur',
+    tokenomicsStages: 'Tükenene kadar turlar (toplam arzın %20\'si). Kabul edilen ödeme yöntemleri: ETH, BNB, USDT veya banka/kredi kartı.',
     tokenomicsClaim: 'Tokenler, Fantasy Pepe üzerinden aynı cüzdan ve ödeme yöntemiyle talep edilebilir.',
     tokenomicsPreSale: 'Ön Satış',
     tokenomicsStakingRewards: 'Staking Ödülleri',
@@ -126,7 +126,7 @@ export const tr: Translations = {
     copyright: '© 2025 Fantasy Pepe. Tüm hakları saklıdır.',
     privacyPolicy: 'Gizlilik Politikası',
     disclaimer: 'Feragatname',
-    disclaimerPart1: '$FEPE bir memecoin’dir, yatırım değildir. Eğlence amaçlıdır—hiçbir içerik finansal tavsiye değildir. $FEPE fiyatı dalgalanabilir ve her şeyi kaybedebilirsin. Kendi araştırmanı yap (DYOR) ve kripto işlemleri öncesi danışmanlık al.',
+    disclaimerPart1: '$FEPE bir meme tokendir, yatırım değildir. Eğlence amaçlıdır—hiçbir içerik finansal tavsiye değildir. $FEPE fiyatı dalgalanabilir ve her şeyi kaybedebilirsin. Kendi araştırmanı yap (DYOR) ve kripto işlemleri öncesi danışmanlık al.',
     disclaimerPart2: 'Fantasy Pepe eğlence, meme ve futbol kaosu içindir—finansal kazanç için değil. Kendi riskinle oyna.',
     cookieConsentTitle: 'Çerez tercihlerini yönet',
     cookieConsentDescription: 'Web sitemizi verimli kullanabilmen ve bazı özelliklerin çalışabilmesi için çerezleri kullanıyoruz. Her kategori altında çerezlerle ilgili detaylı bilgileri bulabilirsin.',
@@ -154,8 +154,12 @@ export const tr: Translations = {
     menuRoadmap: 'Yol Haritası',
     menuHowToBuy: 'Nasıl Alınır',
     menuFaqs: 'SSS',
-    menuBuyFEPE: '$FEPE Satın Al'
+    menuBuyFEPE: '$FEPE Satın Al',
+    transactionPending: 'İşlem Beklemede',
+    transactionTakingLonger: 'İşleminiz beklenenden uzun sürüyor.',
+    wouldYouLikeToTryAgain: 'Tekrar denemek ister misiniz?',
+    cancel: 'İptal',
+    tryAgain: 'Tekrar Dene'
 };
-
 
 export default tr; 

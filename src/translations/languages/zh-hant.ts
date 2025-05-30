@@ -154,9 +154,12 @@ export const zhHant: Translations = {
     menuRoadmap: '路線圖',
     menuHowToBuy: '如何購買',
     menuFaqs: '常見問題',
-    menuBuyFEPE: '購買 $FEPE'
+    menuBuyFEPE: '購買 $FEPE',
+    transactionPending: '交易處理中',
+    transactionTakingLonger: '您的交易正在花費比預期更長的時間。',
+    wouldYouLikeToTryAgain: '您要重試嗎？',
+    cancel: '取消',
+    tryAgain: '重試'
 };
-
-
 
 export default zhHant; 

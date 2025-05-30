@@ -154,7 +154,12 @@ export const ro: Translations = {
   menuRoadmap: 'Foaie de parcurs',
   menuHowToBuy: 'Cum să cumperi',
   menuFaqs: 'Întrebări frecvente',
-  menuBuyFEPE: 'Cumpără $FEPE'
+  menuBuyFEPE: 'Cumpără $FEPE',
+  transactionPending: 'Tranzacție în curs',
+  transactionTakingLonger: 'Tranzacția durează mai mult decât era de așteptat.',
+  wouldYouLikeToTryAgain: 'Doriți să încercați din nou?',
+  cancel: 'Anulare',
+  tryAgain: 'Încearcă din nou'
 };
 
 

@@ -31,14 +31,14 @@ export const it: Translations = {
     howToBuyStep2Title: 'Passaggio 2',
     howToBuyStep2Content: 'Scegli il metodo di pagamento',
     howToBuyStep3Title: 'Passaggio 3',
-    howToBuyStep3Content: 'Conferma l’acquisto',
+    howToBuyStep3Content: "Conferma l'acquisto",
     groupStageTitle: 'Fase a Gironi',
     groupStageMatch1Summary: 'Fepe United subisce una dura sconfitta contro Doge FC',
     groupStageMatch2Summary: 'Partita intensa! Real Floki FC segna presto ma Shiba Inu FC recupera con un pareggio',
     groupStageMatch3Summary: 'Vince Chill Guy FC! Dominano contro Tariffs United!',
     faqTitle: 'FAQ',
-    faqWhatIsFEPE: 'Cos’è il token $FEPE?',
-    faqWhatIsFEPEAnswer: '$FEPE è il miglior token meme calcistico che alimenta partite fantasy AI, leghe meme e un mercato predittivo crypto per scommettere, vincere e fare staking.',
+    faqWhatIsFEPE: "Cos'è il token $FEPE?",
+    faqWhatIsFEPEAnswer: "$FEPE è il miglior token meme calcistico che alimenta partite fantasy AI, leghe meme e un mercato predittivo crypto per scommettere, vincere e fare staking.",
     faqWhereToBuy: 'Dove posso acquistare $FEPE?',
     faqWhereToBuyAnswer: 'Il token $FEPE è acquistabile durante la prevendita sul nostro sito ufficiale. Dopo sarà disponibile su DEX (es. Uniswap).',
     faqWhenGetTokens: 'Quando riceverò i token acquistati in prevendita?',
@@ -77,9 +77,9 @@ export const it: Translations = {
     ],
     keyFeaturesOnChainTitle: 'Mercato Predittivo On-Chain',
     keyFeaturesOnChainBullets: [
-        'Non è gioco d’azzardo—solo previsioni!',
+        "Non è gioco d'azzardo—solo previsioni!",
         'Indovina i vincitori, punteggi, o meme per premi.',
-        'Completamente trasparente, sicuro e on-chain.'
+        'Tutto trasparente, sicuro e on-chain.'
     ],
     keyFeaturesCommunityTitle: 'La Più Grande Community per Degen e Fan del Calcio',
     keyFeaturesCommunityBullets: [
@@ -116,7 +116,7 @@ export const it: Translations = {
     tokenomicsDescription: 'Tokenomics progettata per crescita e sostenibilità',
     tokenomicsTotalSupply: 'Offerta Totale: 125.000.000.000 $FEPE',
     tokenomicsPresale: 'Nessuna prevendita privata—$FEPE parte da $0.0003 e sale ogni 3 giorni per 30 round',
-    tokenomicsStages: 'Round continuano finché l’offerta non termina (20% totale). Accettiamo: ETH, BNB, USDT, carta.',
+    tokenomicsStages: "Round continuano finché l'offerta non termina (20% totale). Accettiamo: ETH, BNB, USDT, carta.",
     tokenomicsClaim: 'Riscatta i tuoi token su Fantasy Pepe usando lo stesso wallet e metodo di pagamento.',
     tokenomicsPreSale: 'Prevendita',
     tokenomicsStakingRewards: 'Ricompense Staking',
@@ -135,9 +135,9 @@ export const it: Translations = {
     cookieConsentNecessary: 'Necessari',
     cookieConsentNecessaryDesc: 'Richiesti per le funzioni base del sito',
     cookieConsentFunctional: 'Funzionali',
-    cookieConsentFunctionalDesc: 'Salva impostazioni e migliora l’esperienza',
+    cookieConsentFunctionalDesc: "Salva impostazioni e migliora l'esperienza",
     cookieConsentAnalytics: 'Analitici',
-    cookieConsentAnalyticsDesc: 'Ci aiuta a capire l’uso del sito',
+    cookieConsentAnalyticsDesc: "Ci aiuta a capire l'uso del sito",
     cookieConsentPerformance: 'Prestazioni',
     cookieConsentPerformanceDesc: 'Migliora le prestazioni del sito',
     cookieConsentAdvertisement: 'Pubblicità',
@@ -154,8 +154,12 @@ export const it: Translations = {
     menuRoadmap: 'Roadmap',
     menuHowToBuy: 'Come Acquistare',
     menuFaqs: 'FAQ',
-    menuBuyFEPE: 'Acquista $FEPE'
+    menuBuyFEPE: 'Compra $FEPE',
+    transactionPending: 'Transazione in corso',
+    transactionTakingLonger: 'La tua transazione sta impiegando più tempo del previsto.',
+    wouldYouLikeToTryAgain: 'Vuoi riprovare?',
+    cancel: 'Annulla',
+    tryAgain: 'Riprova'
 };
-
 
 export default it; 

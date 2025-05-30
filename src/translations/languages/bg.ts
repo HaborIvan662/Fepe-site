@@ -154,5 +154,10 @@ export const bg: Translations = {
     menuRoadmap: 'Пътна карта',
     menuHowToBuy: 'Как да купя',
     menuFaqs: 'ЧЗВ',
-    menuBuyFEPE: 'Купи $FEPE'
+    menuBuyFEPE: 'Купи $FEPE',
+    transactionPending: 'Транзакцията е в процес',
+    transactionTakingLonger: 'Вашата транзакция отнема повече време от очакваното.',
+    wouldYouLikeToTryAgain: 'Искате ли да опитате отново?',
+    cancel: 'Отказ',
+    tryAgain: 'Опитай отново'
 }; 

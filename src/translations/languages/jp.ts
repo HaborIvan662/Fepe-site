@@ -154,7 +154,12 @@ export const jp: Translations = {
   menuRoadmap: 'ロードマップ',
   menuHowToBuy: '購入方法',
   menuFaqs: 'よくある質問',
-  menuBuyFEPE: '$FEPEを購入'
+  menuBuyFEPE: '$FEPE を購入',
+  transactionPending: '取引処理中',
+  transactionTakingLonger: '取引の処理に予想以上の時間がかかっています。',
+  wouldYouLikeToTryAgain: 'もう一度試しますか？',
+  cancel: 'キャンセル',
+  tryAgain: '再試行'
 };
 
 

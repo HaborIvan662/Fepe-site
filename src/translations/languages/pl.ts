@@ -154,7 +154,12 @@ export const pl: Translations = {
     menuRoadmap: 'Mapa drogowa',
     menuHowToBuy: 'Jak kupić',
     menuFaqs: 'FAQ',
-    menuBuyFEPE: 'Kup $FEPE'
+    menuBuyFEPE: 'Kup $FEPE',
+    transactionPending: 'Transakcja w toku',
+    transactionTakingLonger: 'Twoja transakcja trwa dłużej niż oczekiwano.',
+    wouldYouLikeToTryAgain: 'Czy chcesz spróbować ponownie?',
+    cancel: 'Anuluj',
+    tryAgain: 'Spróbuj ponownie'
 };
 
 

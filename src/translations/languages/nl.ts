@@ -154,7 +154,12 @@ export const nl: Translations = {
     menuRoadmap: 'Routekaart',
     menuHowToBuy: 'Hoe te kopen',
     menuFaqs: 'Veelgestelde vragen',
-    menuBuyFEPE: 'Koop $FEPE'
+    menuBuyFEPE: 'Koop $FEPE',
+    transactionPending: 'Transactie in behandeling',
+    transactionTakingLonger: 'Uw transactie duurt langer dan verwacht.',
+    wouldYouLikeToTryAgain: 'Wilt u het opnieuw proberen?',
+    cancel: 'Annuleren',
+    tryAgain: 'Opnieuw proberen'
 };
 
 
