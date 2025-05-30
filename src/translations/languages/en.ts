@@ -159,5 +159,20 @@ export const en: Translations = {
     transactionTakingLonger: 'Your transaction is taking longer than expected.',
     wouldYouLikeToTryAgain: 'Would you like to try again?',
     cancel: 'Cancel',
-    tryAgain: 'Try Again'
+    tryAgain: 'Try Again',
+    aboutTokenTitle: 'Trust By Millions Since 2021',
+    aboutTokenRatedBy: 'Rated by',
+    aboutTokenTrustScore: '$Fepe Token Trust Score',
+    aboutTokenTrustNetTitle: 'TrustNet',
+    aboutTokenTrustNetScore: 'Score',
+    aboutTokenTrustNetDesc: 'The TrustNet Score evaluates crypto projects based on audit results, security, KYC verification, and social media presence. This score offers a quick, transparent view of a project\'s credibility, helping users make informed decisions in the Web3 space.',
+    aboutTokenTrustNetPoor: 'Poor',
+    aboutTokenTrustNetExcellent: 'Excellent',
+    aboutTokenScoreLiquidity: 'Liquidity',
+    aboutTokenScoreScale: 'Scale',
+    aboutTokenScoreSecurity: 'Cybersecurity',
+    aboutTokenScoreAPI: 'API Coverage',
+    aboutTokenScoreTeam: 'Team',
+    aboutTokenScoreIncident: 'Incident',
+    aboutTokenScoreRoR: 'RoR'
 }; 

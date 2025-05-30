@@ -1,10 +1,9 @@
-import React, { memo, useState, useCallback, useEffect } from 'react';
+import React, { memo, useState, useCallback } from 'react';
 import NeedWalletModal from './NeedWalletModal';
 import { useLanguage } from '../../context/LanguageContext';
-import { useAccount } from 'wagmi';
+import { useWalletConnect } from '../../hooks/useWalletConnect';
 import { translations } from '../../translations/languages';
 import type { Language } from '../../translations/languages';
-import { useWalletConnect } from '../../hooks/useWalletConnect';
 
 interface ConnectWalletModalProps {
   isOpen: boolean;
@@ -20,7 +19,6 @@ interface WalletOption {
 const ConnectWalletModal = memo(({ isOpen, onClose }: ConnectWalletModalProps) => {
   const [isNeedWalletModalOpen, setIsNeedWalletModalOpen] = useState(false);
   const { selectedLanguageCode } = useLanguage();
-  const { isConnected } = useAccount();
   const t = translations[selectedLanguageCode as Language] || translations.en;
   const { connectWallet, isPending, connectError, selectedWallet, isMetaMaskInstalled } = useWalletConnect();
 

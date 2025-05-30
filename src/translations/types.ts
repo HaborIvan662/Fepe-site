@@ -142,4 +142,19 @@ export interface Translations {
     wouldYouLikeToTryAgain: string;
     cancel: string;
     tryAgain: string;
+    aboutTokenTitle: string;
+    aboutTokenRatedBy: string;
+    aboutTokenTrustScore: string;
+    aboutTokenTrustNetTitle: string;
+    aboutTokenTrustNetScore: string;
+    aboutTokenTrustNetDesc: string;
+    aboutTokenTrustNetPoor: string;
+    aboutTokenTrustNetExcellent: string;
+    aboutTokenScoreLiquidity: string;
+    aboutTokenScoreScale: string;
+    aboutTokenScoreSecurity: string;
+    aboutTokenScoreAPI: string;
+    aboutTokenScoreTeam: string;
+    aboutTokenScoreIncident: string;
+    aboutTokenScoreRoR: string;
 } 

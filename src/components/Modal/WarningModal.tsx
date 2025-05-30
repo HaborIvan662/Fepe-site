@@ -80,7 +80,7 @@ const WarningModal = () => {
           <span className="text-[16px] sm:text-[20px] md:text-[24px] text-custom-red/80">
             The official URL is
           </span>
-          <span className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)] bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent font-semibold">
+          <span className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)] bg-gradient-to-r from-blue-500 to-blue-700 bg-clip-text text-transparent font-semibold">
             www.pepefantasy.net
           </span>
         </div>

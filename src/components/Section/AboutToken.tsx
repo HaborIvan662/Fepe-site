@@ -1,4 +1,10 @@
+import { useLanguage } from '../../context/LanguageContext';
+import { translations } from '../../translations/languages';
+import type { Language } from '../../translations/languages';
+
 export default function AboutToken() {
+    const { selectedLanguageCode } = useLanguage();
+  const t = translations[selectedLanguageCode as Language] || translations.en;
   return (
     <div>
     <div className="w-full flex justify-center items-center py-6 md:py-12 bg-cover bg-no-repeat bg-center mb-[50px]">
@@ -20,14 +26,14 @@ export default function AboutToken() {
           {/* Main Heading */}
           <h1 className="custom-font3 uppercase tracking-[2.4px] leading-none text-center lg:text-left">
             <span className="text-[40px] md:text-[50px] lg:text-[75px]">
-              Trust By Millions Since 2021
+              {t.aboutTokenTitle}
             </span>
           </h1>
 
           {/* Ratings Section */}
           <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
             <div className="w-full md:w-[60%] flex flex-col justify-center items-center md:items-start gap-2">
-              <h3 className="text-[28px] md:text-[35px] uppercase font-bold">Rated by</h3>
+              <h3 className="text-[28px] md:text-[35px] uppercase font-bold">{t.aboutTokenRatedBy}</h3>
               <div className="flex justify-center md:justify-start items-center gap-4">
                 <img 
                   alt="Coingecko Logo" 
@@ -49,7 +55,7 @@ export default function AboutToken() {
 
         {/* Right Section - Trust Score */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-start bg-white rounded-xl px-4 md:px-6 py-2 gap-4 border-[3px] border-black">
-          <h2 className="text-[24px] md:text-[30px] font-bold">$Fepe Token Trust Score</h2>
+          <h2 className="text-[24px] md:text-[30px] font-bold">{t.aboutTokenTrustScore}</h2>
           <div className="flex justify-start items-center">
             <span className="text-[40px] md:text-[50px] font-[900] leading-none text-green-500">10/10</span>
           </div>
@@ -57,14 +63,14 @@ export default function AboutToken() {
           {/* Score Details */}
           <div className="w-full flex flex-col justify-start items-start">
             {[
-              { label: 'Liquidity', score: '3.0' },
-              { label: 'Scale', score: '1.0' },
-              { label: 'Cybersecurity', score: '0.5' },
-              { label: 'API Coverage', score: '0.5' },
-              { label: 'Team', score: '2.0' },
-              { label: 'Incident', score: '2.0' },
-              { label: 'RoR', score: '1.0' }
-            ].map((item, index) => (
+              { label: t.aboutTokenScoreLiquidity, score: '3.0' },
+              { label: t.aboutTokenScoreScale, score: '1.0' },
+              { label: t.aboutTokenScoreSecurity, score: '0.5' },
+              { label: t.aboutTokenScoreAPI, score: '0.5' },
+              { label: t.aboutTokenScoreTeam, score: '2.0' },
+              { label: t.aboutTokenScoreIncident, score: '2.0' },
+              { label: t.aboutTokenScoreRoR, score: '1.0' }
+            ].map((item) => (
               <div key={item.label} className="w-full flex justify-between items-center p-2 md:p-3 border-t border-t-green-500">
                 <h3 className="text-[16px] md:text-[20px] font-bold">{item.label}</h3>
                 <h3 className="text-[16px] md:text-[20px] font-bold">{item.score}</h3>
@@ -76,11 +82,11 @@ export default function AboutToken() {
       </div>
         <div className="bg-white rounded-xl p-4 sm:p-6 max-w-4xl mx-auto shadow-md text-black border-[3px] border-black mb-[100px]">
           <h2 className="font-bold text-lg sm:text-2xl mb-1">
-            TrustNet <span className="font-normal">Score</span>
+            {t.aboutTokenTrustNetTitle} <span className="font-normal">{t.aboutTokenTrustNetScore}</span>
           </h2>
           
           <p className="text-sm sm:text-base mb-4">
-            The TrustNet Score evaluates crypto projects based on audit results, security, KYC verification, and social media presence. This score offers a quick, transparent view of a project's credibility, helping users make informed decisions in the Web3 space.
+            {t.aboutTokenTrustNetDesc}
           </p>
 
           <div className="flex items-center gap-4 sm:gap-6">
@@ -103,8 +109,8 @@ export default function AboutToken() {
               </div>
               
               <div className="flex justify-between text-xs sm:text-sm">
-                <span>Poor</span>
-                <span>Excellent</span>
+                <span>{t.aboutTokenTrustNetPoor}</span>
+                <span>{t.aboutTokenTrustNetExcellent}</span>
               </div>
             </div>
           </div>
