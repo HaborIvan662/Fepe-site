@@ -31,7 +31,7 @@ export const kr: Translations = {
     howToBuyStep2Title: '2단계',
     howToBuyStep2Content: '결제 수단 선택',
     howToBuyStep3Title: '3단계',
-    howToBuyStep3Content: '구매 확인',
+    howToBuyStep3Content: '프리세일 구매자 전용: 스테이킹을 통해 토큰이 시장에 출시되기 전에 보상을 받을 수 있습니다. 일찍 참여하여 다이나믹 APY를 즐기고 거래 시작 전에 수익을 극대화하세요.',
     groupStageTitle: '조별 예선',
     groupStageMatch1Summary: 'Fepe United가 Doge FC에게 멋지게 패배했습니다',
     groupStageMatch2Summary: '치열한 경기! Real Floki FC가 먼저 득점했지만 Shiba Inu FC가 잘 방어하여 무승부를 기록했습니다',

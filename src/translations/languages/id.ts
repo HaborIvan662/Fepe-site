@@ -31,7 +31,7 @@ export const id: Translations = {
     howToBuyStep2Title: 'Langkah 2',
     howToBuyStep2Content: 'Pilih metode pembayaran',
     howToBuyStep3Title: 'Langkah 3',
-    howToBuyStep3Content: 'Konfirmasi pembelian',
+    howToBuyStep3Content: "Eksklusif untuk pembeli pra-penjualan, staking memungkinkan Anda mendapatkan hadiah sebelum token masuk ke pasar. Bergabunglah lebih awal dan nikmati APY dinamis, memaksimalkan keuntungan Anda sebelum perdagangan dimulai.",
     groupStageTitle: 'Babak Grup',
     groupStageMatch1Summary: 'Fepe United kalah telak melawan Doge FC',
     groupStageMatch2Summary: 'Pertandingan ketat! Real Floki FC mencetak gol lebih awal tetapi Shiba Inu FC menahan hasil imbang',

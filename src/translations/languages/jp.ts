@@ -31,7 +31,7 @@ export const jp: Translations = {
   howToBuyStep2Title: 'ステップ2',
   howToBuyStep2Content: '支払い方法を選択',
   howToBuyStep3Title: 'ステップ3',
-  howToBuyStep3Content: '購入を確定',
+  howToBuyStep3Content: 'プリセール購入者限定：ステーキングでトークンが市場に出る前から報酬を獲得できます。早期参加でダイナミックなAPYを享受し、取引開始前に収益を最大化しましょう。',
   groupStageTitle: 'グループステージ',
   groupStageMatch1Summary: 'Fepe UnitedがDoge FCに惨敗',
   groupStageMatch2Summary: '激戦！Real Floki FCが先制、Shiba Inu FCが同点に追いつく',

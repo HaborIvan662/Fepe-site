@@ -31,7 +31,7 @@ export const ro: Translations = {
   howToBuyStep2Title: 'Pasul 2',
   howToBuyStep2Content: 'Alege metoda de plată',
   howToBuyStep3Title: 'Pasul 3',
-  howToBuyStep3Content: 'Confirmă achiziția',
+  howToBuyStep3Content: 'Exclusiv pentru cumpărătorii din pre-vânzare, staking-ul vă permite să câștigați recompense înainte ca tokenul să ajungă pe piață. Intrați devreme și bucurați-vă de APY dinamic, maximizându-vă câștigurile înainte de începerea tranzacționării.',
   groupStageTitle: 'Faza grupelor',
   groupStageMatch1Summary: 'Fepe United a fost învinsă spectaculos de Doge FC',
   groupStageMatch2Summary: 'Meci tensionat! Real Floki FC a marcat devreme, dar Shiba Inu FC a rezistat și a obținut un egal solid',

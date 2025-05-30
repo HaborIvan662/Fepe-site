@@ -31,7 +31,7 @@ export const nl: Translations = {
     howToBuyStep2Title: 'Stap 2',
     howToBuyStep2Content: 'Kies je betaalmethode',
     howToBuyStep3Title: 'Stap 3',
-    howToBuyStep3Content: 'Bevestig je aankoop',
+    howToBuyStep3Content: "Exclusief voor voorverkoopkopers: staking stelt je in staat om beloningen te verdienen voordat de token op de markt komt. Stap vroeg in en geniet van dynamische APY, waardoor je rendement wordt gemaximaliseerd voordat de handel begint.",
     groupStageTitle: 'Groepsfase',
     groupStageMatch1Summary: 'Fepe United werd op fantastische wijze verslagen door Doge FC',
     groupStageMatch2Summary: 'Spannende wedstrijd! Real Floki FC scoorde vroeg, maar Shiba Inu FC hield stand en behaalde een solide gelijkspel',

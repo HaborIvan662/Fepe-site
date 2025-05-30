@@ -31,7 +31,7 @@ export const cz: Translations = {
   howToBuyStep2Title: 'Krok 2',
   howToBuyStep2Content: 'Vyberte platební metodu',
   howToBuyStep3Title: 'Krok 3',
-  howToBuyStep3Content: 'Potvrďte nákup',
+  howToBuyStep3Content: 'Exkluzivně pro kupující v předprodeji, staking vám umožňuje získávat odměny ještě před vstupem tokenu na trh. Připojte se brzy a užijte si dynamické APY, maximalizujte své výnosy před zahájením obchodování.',
   groupStageTitle: 'Skupinová fáze',
   groupStageMatch1Summary: 'Fepe United byl fantasticky poražen týmem Doge FC',
   groupStageMatch2Summary: 'Těsný zápas! Real Floki FC skóroval brzy, ale Shiba Inu FC udržel remízu',

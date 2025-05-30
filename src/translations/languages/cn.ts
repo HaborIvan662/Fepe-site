@@ -31,7 +31,7 @@ export const cn: Translations = {
     howToBuyStep2Title: '第 2 步',
     howToBuyStep2Content: '选择支付方式',
     howToBuyStep3Title: '第 3 步',
-    howToBuyStep3Content: '确认购买',
+    howToBuyStep3Content: '预售买家专属：质押功能让您在代币上市前就能赚取奖励。早期参与并享受动态年化收益率，在交易开始前最大化您的回报。',
     groupStageTitle: '小组赛',
     groupStageMatch1Summary: 'Fepe United 被 Doge FC 击败，比赛精彩绝伦',
     groupStageMatch2Summary: '激烈对决！Real Floki FC 率先进球，但 Shiba Inu FC 稳住局势，成功战平',

@@ -31,7 +31,7 @@ export const bg: Translations = {
     howToBuyStep2Title: 'Стъпка 2',
     howToBuyStep2Content: 'Изберете начин на плащане',
     howToBuyStep3Title: 'Стъпка 3',
-    howToBuyStep3Content: 'Потвърдете покупката си',
+    howToBuyStep3Content: 'Ексклузивно за купувачите от предварителната продажба, стейкингът ви позволява да печелите награди преди токенът да излезе на пазара. Включете се рано и се възползвайте от динамичен APY, максимизирайки възвръщаемостта си преди началото на търговията.',
     groupStageTitle: 'Групова фаза',
     groupStageMatch1Summary: 'Fepe United беше победен от Doge FC по фантастичен начин',
     groupStageMatch2Summary: 'Близък мач! Real Floki FC вкара рано, но Shiba Inu FC издържа и постигна солидна равен',
@@ -160,4 +160,6 @@ export const bg: Translations = {
     wouldYouLikeToTryAgain: 'Искате ли да опитате отново?',
     cancel: 'Отказ',
     tryAgain: 'Опитай отново'
-}; 
+};
+
+export default bg; 

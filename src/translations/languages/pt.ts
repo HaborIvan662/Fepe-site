@@ -31,7 +31,7 @@ export const pt: Translations = {
     howToBuyStep2Title: 'Passo 2',
     howToBuyStep2Content: 'Escolha seu método de pagamento',
     howToBuyStep3Title: 'Passo 3',
-    howToBuyStep3Content: 'Confirme sua compra',
+    howToBuyStep3Content: 'Exclusivo para compradores da pré-venda, o staking permite que você ganhe recompensas antes do token chegar ao mercado. Entre cedo e aproveite o APY dinâmico, maximizando seus retornos antes do início das negociações.',
     groupStageTitle: 'Fase de Grupos',
     groupStageMatch1Summary: 'Fepe United foi derrotado pelo Doge FC de forma espetacular',
     groupStageMatch2Summary: 'Partida acirrada! Real Floki FC marcou cedo, mas Shiba Inu FC segurou o empate',

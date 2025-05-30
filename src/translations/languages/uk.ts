@@ -31,7 +31,7 @@ export const uk: Translations = {
     howToBuyStep2Title: 'Крок 2',
     howToBuyStep2Content: 'Обери спосіб оплати',
     howToBuyStep3Title: 'Крок 3',
-    howToBuyStep3Content: 'Підтверди покупку',
+    howToBuyStep3Content: "Ексклюзивно для учасників передпродажу: стейкінг дозволяє отримувати винагороди до виходу токена на ринок. Приєднуйтесь раніше та насолоджуйтесь динамічним APY, максимізуючи свій прибуток до початку торгів.",
     groupStageTitle: 'Груповий етап',
     groupStageMatch1Summary: 'Fepe United був яскраво переможений Doge FC',
     groupStageMatch2Summary: 'Напружена гра! Real Floki FC забив рано, але Shiba Inu FC втримався і здобув нічию',

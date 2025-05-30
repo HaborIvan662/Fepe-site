@@ -24,10 +24,6 @@ const ConnectWalletModal = memo(({ isOpen, onClose }: ConnectWalletModalProps) =
   const t = translations[selectedLanguageCode as Language] || translations.en;
   const { connectWallet, isPending, connectError, selectedWallet, isMetaMaskInstalled } = useWalletConnect();
 
-  useEffect(() => { 
-    console.log('Connection status:', { isConnected, connectError, isMetaMaskInstalled })
-  }, [isConnected, connectError, isMetaMaskInstalled]);
-
   const handleWalletConnect = useCallback(async (walletType: string) => {
     try {
       if (walletType === 'MetaMask' && !isMetaMaskInstalled) {

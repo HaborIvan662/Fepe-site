@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react'
 import HomeBanner from './components/Section/HomeBanner'
 import ConsentRevisitButton from './components/ConsentRevisitButton'
 import WalletModalRoot from './components/WalletModalRoot'
+import WarningModal from './components/WarningModal'
 
 // Lazy load components that are not immediately visible
 const FeaturedSection = lazy(() => import('./components/Section/FeaturedSection'))
@@ -18,6 +19,7 @@ const FAQ = lazy(() => import('./components/Section/FAQ'))
 function App() {
   return (
     <>
+      <WarningModal />
       <HomeBanner />
       <ConsentRevisitButton />
       <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>

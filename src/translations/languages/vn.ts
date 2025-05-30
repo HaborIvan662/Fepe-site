@@ -31,7 +31,7 @@ export const vn: Translations = {
   howToBuyStep2Title: 'Bước 2',
   howToBuyStep2Content: 'Chọn phương thức thanh toán',
   howToBuyStep3Title: 'Bước 3',
-  howToBuyStep3Content: 'Xác nhận giao dịch mua',
+  howToBuyStep3Content: 'Độc quyền cho người mua trước: staking cho phép bạn nhận phần thưởng trước khi token lên sàn. Tham gia sớm và tận hưởng APY động, tối đa hóa lợi nhuận của bạn trước khi giao dịch bắt đầu.',
   groupStageTitle: 'Vòng bảng',
   groupStageMatch1Summary: 'Fepe United bị Doge FC đánh bại một cách ngoạn mục',
   groupStageMatch2Summary: 'Trận đấu đầy kịch tính! Real Floki FC ghi bàn sớm, nhưng Shiba Inu FC đã giữ vững để có trận hòa xứng đáng',

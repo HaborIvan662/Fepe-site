@@ -31,7 +31,7 @@ export const ru: Translations = {
     howToBuyStep2Title: 'Шаг 2',
     howToBuyStep2Content: 'Выберите способ оплаты',
     howToBuyStep3Title: 'Шаг 3',
-    howToBuyStep3Content: 'Подтвердите покупку',
+    howToBuyStep3Content: "Эксклюзивно для участников предпродажи: стейкинг позволяет получать вознаграждения до выхода токена на рынок. Присоединяйтесь раньше и наслаждайтесь динамическим APY, максимизируя свою прибыль до начала торгов.",
     groupStageTitle: 'Групповой этап',
     groupStageMatch1Summary: 'Fepe United были разгромлены Doge FC',
     groupStageMatch2Summary: 'Напряжённый матч! Real Floki FC забил рано, но Shiba Inu FC удержал ничью',
@@ -159,8 +159,8 @@ export const ru: Translations = {
     transactionTakingLonger: 'Ваша транзакция занимает больше времени, чем ожидалось.',
     wouldYouLikeToTryAgain: 'Хотите попробовать снова?',
     cancel: 'Отмена',
-    tryAgain: 'Попробовать снова'
+    tryAgain: 'Попробовать снова',
+    howToBuyStep3Content: "Эксклюзивно для участников предпродажи: стейкинг позволяет получать вознаграждения до выхода токена на рынок. Присоединяйтесь раньше и наслаждайтесь динамическим APY, максимизируя свою прибыль до начала торгов."
 };
-
 
 export default ru; 

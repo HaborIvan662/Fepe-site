@@ -31,7 +31,7 @@ export const el: Translations = {
     howToBuyStep2Title: 'Βήμα 2',
     howToBuyStep2Content: 'Επιλέξτε μέθοδο πληρωμής',
     howToBuyStep3Title: 'Βήμα 3',
-    howToBuyStep3Content: 'Επιβεβαιώστε την αγορά',
+    howToBuyStep3Content: 'Αποκλειστικά για αγοραστές προπώλησης, το staking σας επιτρέπει να κερδίζετε ανταμοιβές πριν το token βγει στην αγορά. Μπείτε νωρίς και απολαύστε δυναμικό APY, μεγιστοποιώντας τις αποδόσεις σας πριν ξεκινήσουν οι συναλλαγές.',
     groupStageTitle: 'Φάση Ομίλων',
     groupStageMatch1Summary: 'Η Fepe United κατατροπώθηκε από την Doge FC',
     groupStageMatch2Summary: 'Τι ματσάρα! Η Real Floki FC προηγήθηκε, αλλά η Shiba Inu FC ισοφάρισε',

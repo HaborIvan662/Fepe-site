@@ -31,7 +31,7 @@ export const ar: Translations = {
     howToBuyStep2Title: 'الخطوة 2',
     howToBuyStep2Content: 'اختر طريقة الدفع',
     howToBuyStep3Title: 'الخطوة 3',
-    howToBuyStep3Content: 'تأكيد عملية الشراء',
+    howToBuyStep3Content: 'حصرياً لمشتري البيع المسبق، يتيح لك الاستثمار كسب المكافآت قبل إطلاق التوكن في السوق. انضم مبكراً واستمتع بعائد سنوي ديناميكي، مما يزيد من عوائدك قبل بدء التداول.',
     groupStageTitle: 'مرحلة المجموعات',
     groupStageMatch1Summary: 'هزم Fepe United من قبل Doge FC بطريقة رائعة',
     groupStageMatch2Summary: 'مباراة قريبة! سجل Real Floki FC مبكراً، لكن Shiba Inu FC صمد وحصل على تعادل قوي',
@@ -160,4 +160,6 @@ export const ar: Translations = {
     wouldYouLikeToTryAgain: 'هل تريد المحاولة مرة أخرى؟',
     cancel: 'إلغاء',
     tryAgain: 'حاول مرة أخرى'
-}; 
+};
+
+export default ar; 

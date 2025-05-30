@@ -31,7 +31,7 @@ export const zhHant: Translations = {
     howToBuyStep2Title: '步驟 2',
     howToBuyStep2Content: '選擇支付方式',
     howToBuyStep3Title: '步驟 3',
-    howToBuyStep3Content: '確認購買',
+    howToBuyStep3Content: '預售買家專屬：質押功能讓您在代幣上市前就能賺取獎勵。早期參與並享受動態年化收益率，在交易開始前最大化您的回報。',
     groupStageTitle: '小組賽階段',
     groupStageMatch1Summary: 'Fepe United 被 Doge FC 精彩擊敗',
     groupStageMatch2Summary: '激烈比賽！Real Floki FC 早早得分，但 Shiba Inu FC 堅守，最終取得平局',

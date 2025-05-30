@@ -31,7 +31,7 @@ export const tr: Translations = {
     howToBuyStep2Title: 'Adım 2',
     howToBuyStep2Content: 'Ödeme yöntemini seç',
     howToBuyStep3Title: 'Adım 3',
-    howToBuyStep3Content: 'Satın alımını onayla',
+    howToBuyStep3Content: `Ön satış alıcılarına özel, staking ile token piyasaya çıkmadan önce ödül kazanmaya başlayın. Erken katılın ve dinamik APY'den yararlanarak, işlemler başlamadan önce getirilerinizi maksimize edin.`,
     groupStageTitle: 'Grup Aşaması',
     groupStageMatch1Summary: 'Fepe United, Doge FC tarafından ezici şekilde mağlup edildi',
     groupStageMatch2Summary: 'Heyecanlı maç! Real Floki FC erken gol attı ama Shiba Inu FC direndi ve berabere kaldı',

@@ -31,7 +31,7 @@ export const hu: Translations = {
     howToBuyStep2Title: '2. lépés',
     howToBuyStep2Content: 'Válaszd ki a fizetési módot',
     howToBuyStep3Title: '3. lépés',
-    howToBuyStep3Content: 'Erősítsd meg a vásárlást',
+    howToBuyStep3Content: 'Kizárólag az előértékesítési vásárlók számára, a staking lehetővé teszi a jutalmak megszerzését, mielőtt a token piacra kerülne. Csatlakozzon korán és élvezze a dinamikus APY-t, maximalizálva hozamát a kereskedés megkezdése előtt.',
     groupStageTitle: 'Csoportkör',
     groupStageMatch1Summary: 'A Fepe United látványosan kikapott a Doge FC-től',
     groupStageMatch2Summary: 'Szoros meccs! A Real Floki FC hamar gólt lőtt, de a Shiba Inu FC tartotta magát a döntetlenhez',

@@ -31,7 +31,7 @@ export const th: Translations = {
     howToBuyStep2Title: 'ขั้นตอนที่ 2',
     howToBuyStep2Content: 'เลือกวิธีการชำระเงิน',
     howToBuyStep3Title: 'ขั้นตอนที่ 3',
-    howToBuyStep3Content: 'ยืนยันการซื้อของคุณ',
+    howToBuyStep3Content: 'สิทธิพิเศษสำหรับผู้ซื้อพรีเซล: การสเตกช่วยให้คุณได้รับรางวัลก่อนที่โทเคนจะเข้าสู่ตลาด เข้าร่วมเร็วและรับ APY แบบไดนามิก เพื่อเพิ่มผลตอบแทนสูงสุดก่อนเริ่มการซื้อขาย',
     groupStageTitle: 'รอบแบ่งกลุ่ม',
     groupStageMatch1Summary: 'Fepe United ถูก Doge FC เอาชนะอย่างสวยงาม',
     groupStageMatch2Summary: 'เกมสุดเข้มข้น! Real Floki FC ทำประตูแรกได้เร็ว แต่ Shiba Inu FC แบ่งแต้มได้สำเร็จ',
