@@ -11,6 +11,7 @@ interface PriceData {
 const CACHE_DURATION = 60000; // 1 minute cache
 const MAX_RETRIES = 3;
 const INITIAL_RETRY_DELAY = 1000; // 1 second
+const COINGECKO_API = 'https://api.coingecko.com/api/v3';
 
 export const useBnbPrice = () => {
   const [bnbPrice, setBnbPrice] = useState<{ usd: number; usdc: number } | null>(null);
@@ -34,7 +35,7 @@ export const useBnbPrice = () => {
         return;
       }
 
-      const response = await axios.get<PriceData>('/api/coingecko/simple/price?ids=binancecoin&vs_currencies=usd,usdc', {
+      const response = await axios.get<PriceData>(`${COINGECKO_API}/simple/price?ids=binancecoin&vs_currencies=usd`, {
         timeout: 5000,
         validateStatus: (status) => status < 500,
       });
@@ -53,13 +54,18 @@ export const useBnbPrice = () => {
       if (response.data?.binancecoin) {
         // Update cache
         cacheRef.current = {
-          data: response.data,
+          data: {
+            binancecoin: {
+              usd: response.data.binancecoin.usd,
+              usdc: response.data.binancecoin.usd, // USDC is typically pegged to USD
+            }
+          },
           timestamp: Date.now(),
         };
 
         setBnbPrice({
           usd: response.data.binancecoin.usd,
-          usdc: response.data.binancecoin.usdc,
+          usdc: response.data.binancecoin.usd, // USDC is typically pegged to USD
         });
         retryCountRef.current = 0; // Reset retry count on success
       }

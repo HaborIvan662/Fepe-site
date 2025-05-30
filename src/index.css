@@ -155,7 +155,7 @@
 
     @media screen and (max-width: 1600px) {
       .roadmap-bg{
-        background: url(/assets/images/left-shape.psng) no-repeat -5% 50% / 36%, url(/assets/images/webp/bubble-shape.webp) no-repeat 50% 50% / 60%, url(/assets/images/right-shape.png) no-repeat 120% 55% / 45%;
+        background: url(/assets/images/left-shape.png) no-repeat -5% 50% / 36%, url(/assets/images/webp/bubble-shape.webp) no-repeat 50% 50% / 60%, url(/assets/images/right-shape.png) no-repeat 120% 55% / 45%;
       }
     }
 
