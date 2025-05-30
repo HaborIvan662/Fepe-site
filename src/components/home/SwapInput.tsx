@@ -3,11 +3,10 @@ interface SwapInputProps {
   value: string;
   onChange: (value: string) => void;
   icon?: string;
-  showMax?: boolean;
   selectedToken?: string;
 }
 
-const SwapInput = ({ label, value, onChange, icon, showMax, selectedToken }: SwapInputProps) => {
+const SwapInput = ({ label, value, onChange, icon, selectedToken }: SwapInputProps) => {
   const getTokenLabel = () => {
     if (selectedToken) {
       return `Pay with ${selectedToken.toUpperCase()}`;

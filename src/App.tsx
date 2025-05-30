@@ -1,5 +1,5 @@
 import './App.css'
-import React, { lazy, Suspense } from 'react'
+import { lazy, Suspense } from 'react'
 import HomeBanner from './components/Section/HomeBanner'
 import ConsentRevisitButton from './components/ConsentRevisitButton'
 import WalletModalRoot from './components/WalletModalRoot'

@@ -1,4 +1,4 @@
-import React, { memo, useRef, useEffect, useState } from 'react';
+import { memo, useRef, useEffect, useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { translations } from '../../translations/languages';
 import type { Language } from '../../translations/languages';

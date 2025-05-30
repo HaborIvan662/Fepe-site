@@ -5,6 +5,7 @@ import LanguageDropdown from './home/LanguageDropdown';
 import { useWalletModal } from '../context/WalletModalContext';
 import { translations } from '../translations/languages';
 import { useLanguage } from '../context/LanguageContext';
+import type { Language } from '../translations/languages';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAccount, useDisconnect } from 'wagmi';
 
@@ -14,7 +15,6 @@ interface HeaderProps {
 
 const Header: FC<HeaderProps> = ({ onMenuToggle }) => {
   const [isLanguageOpen, setIsLanguageOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState('English');
   const { selectedLanguageCode, setSelectedLanguageCode } = useLanguage();
   const { openWalletModal } = useWalletModal();
   const { address, isConnected } = useAccount();
@@ -152,8 +152,7 @@ const Header: FC<HeaderProps> = ({ onMenuToggle }) => {
               <LanguageDropdown
                 isOpen={isLanguageOpen}
                 onClose={() => setIsLanguageOpen(false)}
-                onLanguageSelect={(name, code) => {
-                  setSelectedLanguage(name);
+                onLanguageSelect={(_, code: Language) => {
                   setSelectedLanguageCode(code);
                   setIsLanguageOpen(false);
                 }}

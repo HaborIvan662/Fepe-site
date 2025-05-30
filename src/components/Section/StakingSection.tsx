@@ -3,7 +3,6 @@ import { useState } from 'react';
 import ConnectWalletModal from '../Modal/ConnectWalletModal';
 import WithdrawToken from '../Modal/WithdrawToken';
 import ClaimNotLiveModal from '../Modal/ClaimNotLiveModal';
-import { useAccount } from 'wagmi';
 
 interface DataPoint {
   month: string;
@@ -42,7 +41,6 @@ export default function StakingSection() {
   const [isConnectWalletModalOpen, setIsConnectWalletModalOpen] = useState(false);
   const [isWithdrawModalOpen, setIsWithdrawModalOpen] = useState(false);
   const [isClaimNotLiveModalOpen, setIsClaimNotLiveModalOpen] = useState(false);
-  const { isConnected } = useAccount();
 
   return (
     <div className="bg-custom-green w-full min-h-screen">

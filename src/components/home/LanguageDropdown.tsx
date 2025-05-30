@@ -1,37 +1,38 @@
 import { useEffect, useRef } from 'react';
+import type { Language } from '../../translations/languages';
 
 const languages = [
-  { code: 'ar', name: 'عربي' },
-  { code: 'bg', name: 'български' },
-  { code: 'en', name: 'English', active: true },
-  { code: 'cn', name: '中文（简体）' },
-  { code: 'zh-hant', name: '中文（繁體）' },
-  { code: 'cz', name: 'čeština' },
-  { code: 'nl', name: 'Nederlands' },
-  { code: 'fr', name: 'Français' },
-  { code: 'de', name: 'Deutsch' },
-  { code: 'el', name: 'ελληνικά' },
-  { code: 'hu', name: 'magyar' },
-  { code: 'id', name: 'Indonesia' },
-  { code: 'it', name: 'Italiano' },
-  { code: 'jp', name: '日本語' },
-  { code: 'kr', name: '한국인' },
-  { code: 'pl', name: 'Polski' },
-  { code: 'pt', name: 'Português' },
-  { code: 'ro', name: 'română' },
-  { code: 'ru', name: 'Русский' },
-  { code: 'sk', name: 'slovenský' },
-  { code: 'es', name: 'Español' },
-  { code: 'th', name: 'แบบไทย' },
-  { code: 'tr', name: 'Türkçe' },
-  { code: 'uk', name: 'Українська' },
-  { code: 'vn', name: 'Tiếng Việt' },
+  { code: 'ar' as Language, name: 'عربي' },
+  { code: 'bg' as Language, name: 'български' },
+  { code: 'en' as Language, name: 'English', active: true },
+  { code: 'cn' as Language, name: '中文（简体）' },
+  { code: 'zhHant' as Language, name: '中文（繁體）' },
+  { code: 'cz' as Language, name: 'čeština' },
+  { code: 'nl' as Language, name: 'Nederlands' },
+  { code: 'fr' as Language, name: 'Français' },
+  { code: 'de' as Language, name: 'Deutsch' },
+  { code: 'el' as Language, name: 'ελληνικά' },
+  { code: 'hu' as Language, name: 'magyar' },
+  { code: 'id' as Language, name: 'Indonesia' },
+  { code: 'it' as Language, name: 'Italiano' },
+  { code: 'jp' as Language, name: '日本語' },
+  { code: 'kr' as Language, name: '한국인' },
+  { code: 'pl' as Language, name: 'Polski' },
+  { code: 'pt' as Language, name: 'Português' },
+  { code: 'ro' as Language, name: 'română' },
+  { code: 'ru' as Language, name: 'Русский' },
+  { code: 'sk' as Language, name: 'slovenský' },
+  { code: 'es' as Language, name: 'Español' },
+  { code: 'th' as Language, name: 'แบบไทย' },
+  { code: 'tr' as Language, name: 'Türkçe' },
+  { code: 'uk' as Language, name: 'Українська' },
+  { code: 'vn' as Language, name: 'Tiếng Việt' },
 ];
 
 interface LanguageDropdownProps {
   isOpen: boolean;
   onClose: () => void;
-  onLanguageSelect: (name: string, code: string) => void;
+  onLanguageSelect: (name: string, code: Language) => void;
 }
 
 export default function LanguageDropdown({ isOpen, onClose, onLanguageSelect }: LanguageDropdownProps) {

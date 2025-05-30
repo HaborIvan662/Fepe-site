@@ -1,15 +1,15 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
-import type { ReactNode } from 'react';
+import React, { createContext, useContext, useState } from 'react';
+import type { Language } from '../translations/languages';
 
 interface LanguageContextType {
-  selectedLanguageCode: string;
-  setSelectedLanguageCode: (code: string) => void;
+  selectedLanguageCode: Language;
+  setSelectedLanguageCode: (code: Language) => void;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [selectedLanguageCode, setSelectedLanguageCode] = useState('en');
+export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const [selectedLanguageCode, setSelectedLanguageCode] = useState<Language>('en');
   
   return (
     <LanguageContext.Provider value={{ selectedLanguageCode, setSelectedLanguageCode }}>

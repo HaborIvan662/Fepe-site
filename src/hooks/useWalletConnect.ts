@@ -1,15 +1,10 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback } from 'react';
 import { useConnect } from 'wagmi';
 import { injected, walletConnect } from 'wagmi/connectors';
-import { useAccount, useChainId } from 'wagmi';
-
 
 export const useWalletConnect = () => {
-
-
   const [selectedWallet, setSelectedWallet] = useState<string | null>(null);
   const { connect, isPending, error: connectError } = useConnect();
-
 
   const connectWallet = useCallback(async (walletType: string) => {
     try {

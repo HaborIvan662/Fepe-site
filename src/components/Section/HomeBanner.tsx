@@ -11,7 +11,6 @@ import { useCountdown } from '../../hooks/useCountdown';
 import { useEthPrice } from '../../hooks/useEthPrice';
 import { useBnbPrice } from '../../hooks/useBnbPrice';
 import { usePresaleInfo } from '../../hooks/usePresaleInfo';
-import { TOKENS } from '../../constants/tokens';
 import type { SwapState } from '../../types';
 import { translations } from '../../translations/languages';
 import type { Language } from '../../translations/languages';
@@ -40,8 +39,8 @@ const HomeBanner = memo(() => {
 
   const countdown = useCountdown();
   const { selectedLanguageCode } = useLanguage();
-  const { ethPrice, isLoading: isEthPriceLoading } = useEthPrice();
-  const { bnbPrice, isLoading: isBnbPriceLoading } = useBnbPrice();
+  const { ethPrice } = useEthPrice();
+  const { bnbPrice } = useBnbPrice();
   const { tokensPerUSDT, ...presaleInfo } = usePresaleInfo();
   const t = translations[selectedLanguageCode as Language] || translations.en;
   const { isConnected, address } = useAccount();
@@ -65,10 +64,10 @@ const HomeBanner = memo(() => {
     address,
   });
 
-  const { handleTransfer: handleUsdtTransfer, isTransferring: isUsdtTransferring } = useUsdtTransaction();
-  const { handleTransfer: handleUsdcTransfer, isTransferring: isUsdcTransferring } = useUsdcTransaction();
-  const { handleTransfer: handleEthTransfer, isTransferring: isEthTransferring } = useEthTransaction();
-  const { handleTransfer: handleBnbTransfer, isTransferring: isBnbTransferring } = useBnbTransaction();
+  const { handleTransfer: handleUsdtTransfer } = useUsdtTransaction();
+  const { handleTransfer: handleUsdcTransfer } = useUsdcTransaction();
+  const { handleTransfer: handleEthTransfer } = useEthTransaction();
+  const { handleTransfer: handleBnbTransfer } = useBnbTransaction();
 
   const getTokenBalance = useCallback(() => {
     if (!isConnected) return '0';
@@ -282,7 +281,6 @@ const HomeBanner = memo(() => {
                               value={swapState.payAmount}
                               onChange={handlePayAmountChange}
                               icon="/assets/images/svg-icons/ETH.svg"
-                              showMax
                               selectedToken={swapState.selectedToken}
                             />
                             <SwapInput
@@ -301,14 +299,16 @@ const HomeBanner = memo(() => {
                         {isConnected && swapState.payAmount && !hasEnoughGas && (
                           <p className="text-sm text-center text-[#8F190F]">Make sure you have 0.005 ETH for gas and USDC for the token exchange.</p>
                         )}
-{isConnected&&
-                        <button 
-                          onClick={handleBuyButtonClick}
-                          className="w-full min-h-[50px] text-[15px] font-normal rounded-[16px] flex justify-center items-center border-[3px] border-black min-w-[120px] bg-custom-red text-white transition-colors hover:bg-custom-green hover:text-black"
-                        >
-                          Buy and Stake for 606% Rewards
-                        </button>
-}
+
+                        {isConnected && (
+                          <button 
+                            onClick={handleBuyButtonClick}
+                            className="w-full min-h-[50px] text-[15px] font-normal rounded-[16px] flex justify-center items-center border-[3px] border-black min-w-[120px] bg-custom-red text-white transition-colors hover:bg-custom-green hover:text-black"
+                          >
+                            Buy and Stake for 606% Rewards
+                          </button>
+                        )}
+
                         {/* Action Buttons */}
                         <div className="flex items-stretch justify-center gap-2 mt-4">
                           <button

@@ -1,5 +1,5 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
-import { useAccount } from "wagmi"
+import React, { createContext, useContext, useState } from 'react';
+
 interface WalletModalContextType {
   isWalletModalOpen: boolean;
   openWalletModal: () => void;
@@ -10,7 +10,6 @@ const WalletModalContext = createContext<WalletModalContextType | undefined>(und
 
 export const WalletModalProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isWalletModalOpen, setIsWalletModalOpen] = useState(false);
-  const { isConnected, address} = useAccount()
 
   const openWalletModal = () => setIsWalletModalOpen(true);
   const closeWalletModal = () => setIsWalletModalOpen(false);

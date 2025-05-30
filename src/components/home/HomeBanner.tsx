@@ -1,11 +1,10 @@
-import React, { useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import TokenTabs from "./TokenTabs";
 import { useAccount } from 'wagmi';
 import { useUsdtTransaction } from '../../hooks/useUsdtTransaction';
 import { useUsdcTransaction } from '../../hooks/useUsdcTransaction';
 import { useEthTransaction } from '../../hooks/useEthTransaction';
 import { useBnbTransaction } from '../../hooks/useBnbTransaction';
-import type { Hash } from 'viem';
 import { useEthPrice } from '../../hooks/useEthPrice';
 import { useBnbPrice } from '../../hooks/useBnbPrice';
 import { usePresaleInfo } from '../../hooks/usePresaleInfo';
@@ -14,7 +13,6 @@ const HomeBanner = () => {
   const [selectedToken, setSelectedToken] = useState("ETH");
   const [isBNBMode, setIsBNBMode] = useState(false);
   const [amount, setAmount] = useState("");
-  const [recipientAddress, setRecipientAddress] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [purchasedAmount, setPurchasedAmount] = useState("0");
@@ -24,10 +22,10 @@ const HomeBanner = () => {
   const { bnbPrice } = useBnbPrice();
   const { tokensPerUSDT } = usePresaleInfo();
 
-  const { handleTransfer: handleUsdtTransfer, isTransferring: isUsdtTransferring } = useUsdtTransaction();
-  const { handleTransfer: handleUsdcTransfer, isTransferring: isUsdcTransferring } = useUsdcTransaction();
-  const { handleTransfer: handleEthTransfer, isTransferring: isEthTransferring } = useEthTransaction();
-  const { handleTransfer: handleBnbTransfer, isTransferring: isBnbTransferring } = useBnbTransaction();
+  const { handleTransfer: handleUsdtTransfer } = useUsdtTransaction();
+  const { handleTransfer: handleUsdcTransfer } = useUsdcTransaction();
+  const { handleTransfer: handleEthTransfer } = useEthTransaction();
+  const { handleTransfer: handleBnbTransfer } = useBnbTransaction();
 
   const handleTokenSelect = (token: string) => {
     setSelectedToken(token);

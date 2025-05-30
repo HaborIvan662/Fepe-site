@@ -1,4 +1,4 @@
-import React, { memo, useRef, useEffect, useState } from 'react';
+import { memo, useRef, useEffect } from 'react';
 
 interface NeedWalletModalProps {
   isOpen: boolean;
@@ -7,20 +7,11 @@ interface NeedWalletModalProps {
 
 const NeedWalletModal = memo(({ isOpen, onClose }: NeedWalletModalProps) => {
   const modalRef = useRef<HTMLDivElement>(null);
-  const [isClosing, setIsClosing] = useState(false);
-
-  const handleClose = () => {
-    setIsClosing(true);
-    setTimeout(() => {
-      setIsClosing(false);
-      onClose();
-    }, 300);
-  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-        handleClose();
+        onClose();
       }
     };
 
@@ -43,7 +34,7 @@ const NeedWalletModal = memo(({ isOpen, onClose }: NeedWalletModalProps) => {
             Need a wallet?
           </h2>
           <p className="text-[14px] text-center block md:hidden mb-3 md:mb-0">
-            MetaMask is the world’s most secure and flexible crypto wallet, trusted by millions of users to buy, sell, and swap digital assets. Manage your portfolio, interact with dapps, and jump into the decentralized web.
+            MetaMask is the world's most secure and flexible crypto wallet, trusted by millions of users to buy, sell, and swap digital assets. Manage your portfolio, interact with dapps, and jump into the decentralized web.
           </p>
           <div onClick={onClose} className="cursor-pointer absolute top-[-10px] right-[-10px]">
             <svg
@@ -75,7 +66,7 @@ const NeedWalletModal = memo(({ isOpen, onClose }: NeedWalletModalProps) => {
                   <img src="/assets/images/svg-icons/footer-logo.svg" alt="footer-logo" className="w-[100] h-[100]" />
                 </div>
                 <div className="text-[18px] topInfo">
-                  MetaMask is the world’s most secure and flexible crypto wallet, trusted by millions of users to buy, sell, and swap digital assets. Manage your portfolio, interact with dapps, and jump into the decentralized web.
+                  MetaMask is the world's most secure and flexible crypto wallet, trusted by millions of users to buy, sell, and swap digital assets. Manage your portfolio, interact with dapps, and jump into the decentralized web.
                 </div>
               </div>
 
