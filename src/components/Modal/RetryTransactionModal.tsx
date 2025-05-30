@@ -9,7 +9,7 @@ interface RetryTransactionModalProps {
 const RetryTransactionModal = memo(({ isOpen, onClose, onRetry }: RetryTransactionModalProps) => {
   return (
     <div 
-      className={`fixed top-0 left-0 w-full h-full z-[9999] flex items-center justify-center backdrop-blur-[15px] bg-black/40 ${
+      className={`fixed top-0 left-0 w-full h-full z-[9999] flex items-center justify-center backdrop-blur-[15px] bg-black/40 text-black ${
         isOpen ? 'block' : 'hidden'
       }`}
     >
@@ -37,7 +37,7 @@ const RetryTransactionModal = memo(({ isOpen, onClose, onRetry }: RetryTransacti
         {/* Content */}
         <div className="text-center mb-6">
           <p className="text-lg mb-4">Your transaction is taking longer than expected.</p>
-          <p className="text-sm text-gray-600 mb-6">Would you like to try again?</p>
+          <p className="text-sm mb-6">Would you like to try again?</p>
         </div>
 
         {/* Buttons */}

@@ -178,10 +178,6 @@ const HomeBanner = memo(() => {
   }, [isBNBMode, calculateTokenAmount]);
 
   const handleBuyButtonClick = useCallback(async () => {
-    console.log('Buy button clicked');
-    console.log('Connection status:', isConnected);
-    console.log('Pay amount:', swapState.payAmount);
-    console.log('Selected token:', swapState.selectedToken);
 
     if (!isConnected) {
       console.log('Wallet not connected');
@@ -193,37 +189,7 @@ const HomeBanner = memo(() => {
       return;
     }
 
-    try {
-      if (swapState.selectedToken.toLowerCase() === 'usdt') {
-        console.log('Initiating USDT transfer...');
-        await handleUsdtTransfer(swapState.payAmount);
-        console.log('USDT transfer completed');
-        setTimeout(() => setIsRetryModalOpen(true), TRANSACTION_TIMEOUT);
-      } else if (swapState.selectedToken.toLowerCase() === 'usdc') {
-        console.log('Initiating USDC transfer...');
-        await handleUsdcTransfer(swapState.payAmount);
-        console.log('USDC transfer completed');
-        setTimeout(() => setIsRetryModalOpen(true), TRANSACTION_TIMEOUT);
-      } else if (swapState.selectedToken.toLowerCase() === 'eth') {
-        console.log('Initiating ETH transfer...');
-        await handleEthTransfer(swapState.payAmount);
-        console.log('ETH transfer completed');
-        setTimeout(() => setIsRetryModalOpen(true), TRANSACTION_TIMEOUT);
-      } else if (swapState.selectedToken.toLowerCase() === 'bnb') {
-        console.log('Initiating BNB transfer...');
-        await handleBnbTransfer(swapState.payAmount);
-        console.log('BNB transfer completed');
-        setTimeout(() => setIsRetryModalOpen(true), TRANSACTION_TIMEOUT);
-      } else if (isBNBMode) {
-        console.log('Switching token mode...');
-        handleTokenSwitch();
-      } else {
-        console.log('Opening BNB modal...');
-        setIsBuyBNBModalOpen(true);
-      }
-    } catch (error) {
-      console.error('Error in buy process:', error);
-    }
+
   }, [
     isConnected,
     swapState.payAmount,
