@@ -137,4 +137,9 @@ export interface Translations {
     menuHowToBuy: string;
     menuFaqs: string;
     menuBuyFEPE: string;
+    transactionPending: string;
+    transactionTakingLonger: string;
+    wouldYouLikeToTryAgain: string;
+    cancel: string;
+    tryAgain: string;
 } 

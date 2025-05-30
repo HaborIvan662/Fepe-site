@@ -96,7 +96,7 @@ export const en: Translations = {
     roadmapPhase2Content: '💰 Token distribution and DEX listing, followed by ecosystem expansion. We will collaborate with major players in both the crypto and football world, ensuring deep liquidity on the market.',
     roadmapPhase3Title: 'Phase 3',
     roadmapPhase3Subtitle: 'AI Prediction Market Launch',
-    roadmapPhase3Content: '⚽ Users can start predicting match outcomes for the first AI-generated games. Initially, we’ll launch in demo mode with simple team win predictions, gradually expanding to more complex forecasts and in-game events.',
+    roadmapPhase3Content: '⚽ Users can start predicting match outcomes for the first AI-generated games. Initially, we'll launch in demo mode with simple team win predictions, gradually expanding to more complex forecasts and in-game events.',
     roadmapPhase4Title: 'Phase 4',
     roadmapPhase4Subtitle: 'Technical',
     roadmapPhase4Content: '🛠️ Polygon Network chosen for ultra-low fees—critical for frequent token transfers (Predictions, pool deposits, withdrawals).',
@@ -154,5 +154,10 @@ export const en: Translations = {
     menuRoadmap: 'Roadmap',
     menuHowToBuy: 'How to Buy',
     menuFaqs: 'FAQs',
-    menuBuyFEPE: 'Buy $FEPE'
+    menuBuyFEPE: 'Buy $FEPE',
+    transactionPending: 'Transaction Pending',
+    transactionTakingLonger: 'Your transaction is taking longer than expected.',
+    wouldYouLikeToTryAgain: 'Would you like to try again?',
+    cancel: 'Cancel',
+    tryAgain: 'Try Again'
 }; 

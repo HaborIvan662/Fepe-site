@@ -22,20 +22,25 @@ const ConnectWalletModal = memo(({ isOpen, onClose }: ConnectWalletModalProps) =
   const { selectedLanguageCode } = useLanguage();
   const { isConnected } = useAccount();
   const t = translations[selectedLanguageCode as Language] || translations.en;
-  const { connectWallet, isPending, connectError, selectedWallet } = useWalletConnect();
+  const { connectWallet, isPending, connectError, selectedWallet, isMetaMaskInstalled } = useWalletConnect();
 
   useEffect(() => { 
-    console.log(isConnected, connectError)
-  }, [isConnected, connectError]);
+    console.log('Connection status:', { isConnected, connectError, isMetaMaskInstalled })
+  }, [isConnected, connectError, isMetaMaskInstalled]);
 
   const handleWalletConnect = useCallback(async (walletType: string) => {
     try {
+      if (walletType === 'MetaMask' && !isMetaMaskInstalled) {
+        window.open('https://metamask.io/download/', '_blank');
+        return;
+      }
       await connectWallet(walletType);
       onClose();
     } catch (error) {
       // Error is already handled in the hook
+      console.error('Wallet connection error:', error);
     }
-  }, [connectWallet, onClose]);
+  }, [connectWallet, onClose, isMetaMaskInstalled]);
 
   const handleNeedWalletModalClose = useCallback(() => {
     setIsNeedWalletModalOpen(false);
@@ -105,9 +110,9 @@ const ConnectWalletModal = memo(({ isOpen, onClose }: ConnectWalletModalProps) =
           </div>
 
           {/* Error Message */}
-          {/* {connectError && (
+          {connectError && (
             <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-lg text-sm">
-              {connectError.message === 'No provider was set' ? (
+              {connectError.message === 'MetaMask is not installed' ? (
                 <div className="flex flex-col items-center">
                   <p className="mb-2">MetaMask is not installed</p>
                   <a
@@ -123,7 +128,7 @@ const ConnectWalletModal = memo(({ isOpen, onClose }: ConnectWalletModalProps) =
                 connectError.message
               )}
             </div>
-          )} */}
+          )}
 
           {/* Chain Info */}
           {/* {chainId && (
@@ -134,19 +139,26 @@ const ConnectWalletModal = memo(({ isOpen, onClose }: ConnectWalletModalProps) =
 
           {/* Wallet Options */}
           <div className="space-y-3">
-            {walletOptions.map((wallet) => (
-              <button
-                key={wallet.name}
-                onClick={wallet.onClick}
-                disabled={isPending && selectedWallet === wallet.name}
-                className="w-full flex justify-between items-center text-white bg-custom-red min-w-[140px] font-normal rounded-[16px] py-3 px-4 border-[3px] border-black hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                <span>{wallet.name}</span>
-                <div className="w-8 h-8">
-                  {wallet.icon}
-                </div>
-              </button>
-            ))}
+            {walletOptions.map((wallet) => {
+              const isMetaMaskButton = wallet.name === 'MetaMask';
+              const buttonText = isMetaMaskButton && !isMetaMaskInstalled 
+                ? 'Install MetaMask' 
+                : wallet.name;
+              
+              return (
+                <button
+                  key={wallet.name}
+                  onClick={wallet.onClick}
+                  disabled={isPending && selectedWallet === wallet.name}
+                  className="w-full flex justify-between items-center text-white bg-custom-red min-w-[140px] font-normal rounded-[16px] py-3 px-4 border-[3px] border-black hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <span>{buttonText}</span>
+                  <div className="w-8 h-8">
+                    {wallet.icon}
+                  </div>
+                </button>
+              );
+            })}
 
             {/* No Wallet Button */}
             <button

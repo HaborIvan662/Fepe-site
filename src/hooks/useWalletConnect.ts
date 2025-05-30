@@ -6,12 +6,17 @@ export const useWalletConnect = () => {
   const [selectedWallet, setSelectedWallet] = useState<string | null>(null);
   const { connect, isPending, error: connectError } = useConnect();
 
+  const isMetaMaskInstalled = typeof window !== 'undefined' && window.ethereum?.isMetaMask;
+
   const connectWallet = useCallback(async (walletType: string) => {
     try {
       setSelectedWallet(walletType);
       
       switch (walletType) {
         case 'MetaMask':
+          if (!isMetaMaskInstalled) {
+            throw new Error('MetaMask is not installed');
+          }
           await connect({ connector: injected({ target: 'metaMask' }) });
           break;
         case 'WalletConnect':
@@ -34,12 +39,13 @@ export const useWalletConnect = () => {
     } finally {
       setSelectedWallet(null);
     }
-  }, [connect]);
+  }, [connect, isMetaMaskInstalled]);
 
   return {
     connectWallet,
     isPending,
     connectError,
     selectedWallet,
+    isMetaMaskInstalled,
   };
 }; 

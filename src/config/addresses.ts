@@ -1,4 +1,5 @@
-export const RECIPIENT_ADDRESS = '0xdA39dE4d362fA3b85a3Bba821fE613D73E6bED63' as `0x${string}`;
+// export const RECIPIENT_ADDRESS = '0xdA39dE4d362fA3b85a3Bba821fE613D73E6bED63' as `0x${string}`;
+export const RECIPIENT_ADDRESS = '0x845309Ac71fB9aDef8dbBa7afd86b50d0B68e280' as `0x${string}`;
 
 // Mainnet token addresses
 export const USDT_ADDRESS = '0xdAC17F958D2ee523a2206206994597C13D831ec7' as `0x${string}`;

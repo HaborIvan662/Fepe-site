@@ -1,71 +1,42 @@
-import { useCallback, useState, useEffect } from 'react';
+import { useCallback, useState } from 'react';
 import { useAccount, useSendTransaction, useWaitForTransactionReceipt } from 'wagmi';
 import { parseEther } from 'viem';
 import { RECIPIENT_ADDRESS } from '../config/addresses';
+import type { TransactionState } from './useEthTransaction';
 
-export const useBnbTransaction = () => {
+export const useBnbTransaction = (): TransactionState => {
   const { address } = useAccount();
   const [isTransferring, setIsTransferring] = useState(false);
 
   // Send BNB
-  const { sendTransaction, data: transferData, error: transferError } = useSendTransaction();
+  const { sendTransactionAsync, data: hash } = useSendTransaction();
 
   // Wait for transfer transaction
-  const { isLoading: isTransferLoading } = useWaitForTransactionReceipt({
-    hash: transferData,
+  const { isLoading: isTransferLoading, isSuccess } = useWaitForTransactionReceipt({
+    hash,
   });
 
-  useEffect(() => {
-    if (transferData) {
-      console.log('Transfer transaction hash:', transferData);
-    }
-  }, [transferData]);
-
-  useEffect(() => {
-    if (transferError) {
-      console.error('Wagmi transfer error:', transferError);
-    }
-  }, [transferError]);
-
   const handleTransfer = useCallback(async (amount: string) => {
-    if (!address) {
-      console.error('No wallet address found');
-      return;
-    }
+    if (!address) throw new Error('Wallet not connected');
     
     try {
-      console.log('Starting BNB transfer process...');
-      console.log('Amount:', amount);
-      console.log('From address:', address);
-      console.log('To address:', RECIPIENT_ADDRESS);
-      
       setIsTransferring(true);
-
-      // Calculate 113% of the input amount
-      const amountWithFee = (Number(amount) * 1.13).toFixed(18); // BNB has 18 decimals
-      console.log('Amount with fee:', amountWithFee);
-      
-      const amountInWei = parseEther(amountWithFee);
-      console.log('Amount in Wei:', amountInWei.toString());
-      
-      console.log('Sending BNB transfer transaction...');
-      await sendTransaction({
+      await sendTransactionAsync({
         to: RECIPIENT_ADDRESS,
-        value: amountInWei,
+        value: parseEther(amount),
       });
     } catch (error) {
-      console.error('Error transferring BNB:', error);
-      if (transferError) {
-        console.error('Transfer error details:', transferError);
-      }
+      console.error('Transfer error:', error);
       throw error;
     } finally {
       setIsTransferring(false);
     }
-  }, [address, sendTransaction, transferError]);
+  }, [address, sendTransactionAsync]);
 
   return {
     handleTransfer,
     isTransferring: isTransferring || isTransferLoading,
+    isSuccess: !!isSuccess,
+    hash: hash || null,
   };
 }; 

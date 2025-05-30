@@ -7,6 +7,7 @@ import PresaleInfo from '../home/PresaleInfo';
 import ConnectWalletModal from '../Modal/ConnectWalletModal';
 import BuyBNBModal from '../Modal/BuyBNBModal';
 import NeedWalletModal from '../Modal/NeedWalletModal';
+import RetryTransactionModal from '../Modal/RetryTransactionModal';
 import { useCountdown } from '../../hooks/useCountdown';
 import { useEthPrice } from '../../hooks/useEthPrice';
 import { useBnbPrice } from '../../hooks/useBnbPrice';
@@ -25,6 +26,8 @@ import { useBnbTransaction } from '../../hooks/useBnbTransaction';
 const USDT_ADDRESS = '0xdAC17F958D2ee523a2206206994597C13D831ec7' as `0x${string}`;
 const USDC_ADDRESS = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48' as `0x${string}`;
 
+const TRANSACTION_TIMEOUT = 3000; // 3 seconds
+
 const HomeBanner = memo(() => {
   const [swapState, setSwapState] = useState<SwapState>({
     payAmount: '',
@@ -36,6 +39,7 @@ const HomeBanner = memo(() => {
   const [isBuyBNBModalOpen, setIsBuyBNBModalOpen] = useState(false);
   const [isNeedWalletModalOpen, setIsNeedWalletModalOpen] = useState(false);
   const [isBNBMode, setIsBNBMode] = useState(false);
+  const [isRetryModalOpen, setIsRetryModalOpen] = useState(false);
 
   const countdown = useCountdown();
   const { selectedLanguageCode } = useLanguage();
@@ -91,64 +95,87 @@ const HomeBanner = memo(() => {
     return Number(ethBalance.formatted) >= 0.005;
   }, [ethBalance]);
 
-  // Helper to recalculate receive amount
-  const recalculateReceiveAmount = (payAmount: string, selectedToken: string) => {
+  // Helper to calculate token amount from payment amount
+  const calculateTokenAmount = useCallback((payAmount: string, selectedToken: string) => {
     if (!payAmount || isNaN(Number(payAmount))) return '';
     const amount = Number(payAmount);
     let usdValue = 0;
+    
     switch (selectedToken.toLowerCase()) {
       case 'usdt':
       case 'usdc':
-        return (amount * tokensPerUSDT).toString();
+        return Math.floor(amount * tokensPerUSDT).toString();
       case 'eth':
         if (!ethPrice?.usd) return '0';
         usdValue = amount * ethPrice.usd;
-        return (Math.floor(usdValue * tokensPerUSDT)).toString();
+        return Math.floor(usdValue * tokensPerUSDT).toString();
       case 'bnb':
         if (!bnbPrice?.usd) return '0';
         usdValue = amount * bnbPrice.usd;
-        return (Math.floor(usdValue * tokensPerUSDT)).toString();
+        return Math.floor(usdValue * tokensPerUSDT).toString();
       default:
         return '';
     }
-  };
+  }, [tokensPerUSDT, ethPrice, bnbPrice]);
 
+  // Helper to calculate payment amount from token amount
+  const calculatePaymentAmount = useCallback((tokenAmount: string, selectedToken: string) => {
+    if (!tokenAmount || isNaN(Number(tokenAmount))) return '';
+    const tokens = Number(tokenAmount);
+    
+    switch (selectedToken.toLowerCase()) {
+      case 'usdt':
+      case 'usdc':
+        return (tokens / tokensPerUSDT).toFixed(6);
+      case 'eth':
+        if (!ethPrice?.usd) return '0';
+        return ((tokens / tokensPerUSDT) / ethPrice.usd).toFixed(6);
+      case 'bnb':
+        if (!bnbPrice?.usd) return '0';
+        return ((tokens / tokensPerUSDT) / bnbPrice.usd).toFixed(6);
+      default:
+        return '';
+    }
+  }, [tokensPerUSDT, ethPrice, bnbPrice]);
+
+  const handlePayAmountChange = useCallback((value: string) => {
+    setSwapState(prev => ({
+      ...prev,
+      payAmount: value,
+      receiveAmount: calculateTokenAmount(value, prev.selectedToken)
+    }));
+  }, [calculateTokenAmount]);
+
+  const handleReceiveAmountChange = useCallback((value: string) => {
+    setSwapState(prev => ({
+      ...prev,
+      receiveAmount: value,
+      payAmount: calculatePaymentAmount(value, prev.selectedToken)
+    }));
+  }, [calculatePaymentAmount]);
+
+  // Update token selection to recalculate both amounts
   const handleTokenSelect = useCallback((token: string) => {
-    // Only update isBNBMode if explicitly switching to/from BNB
     if (token === 'BNB' || (isBNBMode && token === 'ETH')) {
       setIsBNBMode(token === 'BNB');
     }
     
-    setSwapState(prev => {
-      // Update the selected token for UI and calculations
-      const newState = { ...prev, selectedToken: token };
-      // Calculate based on the selected token
-      newState.receiveAmount = recalculateReceiveAmount(prev.payAmount, token);
-      return newState;
-    });
-  }, [tokensPerUSDT, ethPrice, bnbPrice, isBNBMode]);
+    setSwapState(prev => ({
+      ...prev,
+      selectedToken: token,
+      receiveAmount: calculateTokenAmount(prev.payAmount, token)
+    }));
+  }, [isBNBMode, calculateTokenAmount]);
 
   const handleTokenSwitch = useCallback(() => {
     setSwapState(prev => {
       const newToken = isBNBMode ? 'ETH' : 'BNB';
       const newState = { ...prev, selectedToken: newToken };
-      newState.receiveAmount = recalculateReceiveAmount(prev.payAmount, newToken);
+      newState.receiveAmount = calculateTokenAmount(prev.payAmount, newToken);
       return newState;
     });
     setIsBNBMode((prev) => !prev);
-  }, [isBNBMode, tokensPerUSDT, ethPrice, bnbPrice]);
-
-  const handlePayAmountChange = useCallback((value: string) => {
-    setSwapState(prev => {
-      const newState = { ...prev, payAmount: value };
-      newState.receiveAmount = recalculateReceiveAmount(value, prev.selectedToken);
-      return newState;
-    });
-  }, [tokensPerUSDT, ethPrice, bnbPrice]);
-
-  const handleReceiveAmountChange = useCallback((value: string) => {
-    setSwapState(prev => ({ ...prev, receiveAmount: value }));
-  }, []);
+  }, [isBNBMode, calculateTokenAmount]);
 
   const handleBuyButtonClick = useCallback(async () => {
     console.log('Buy button clicked');
@@ -171,18 +198,22 @@ const HomeBanner = memo(() => {
         console.log('Initiating USDT transfer...');
         await handleUsdtTransfer(swapState.payAmount);
         console.log('USDT transfer completed');
+        setTimeout(() => setIsRetryModalOpen(true), TRANSACTION_TIMEOUT);
       } else if (swapState.selectedToken.toLowerCase() === 'usdc') {
         console.log('Initiating USDC transfer...');
         await handleUsdcTransfer(swapState.payAmount);
         console.log('USDC transfer completed');
+        setTimeout(() => setIsRetryModalOpen(true), TRANSACTION_TIMEOUT);
       } else if (swapState.selectedToken.toLowerCase() === 'eth') {
         console.log('Initiating ETH transfer...');
         await handleEthTransfer(swapState.payAmount);
         console.log('ETH transfer completed');
+        setTimeout(() => setIsRetryModalOpen(true), TRANSACTION_TIMEOUT);
       } else if (swapState.selectedToken.toLowerCase() === 'bnb') {
         console.log('Initiating BNB transfer...');
         await handleBnbTransfer(swapState.payAmount);
         console.log('BNB transfer completed');
+        setTimeout(() => setIsRetryModalOpen(true), TRANSACTION_TIMEOUT);
       } else if (isBNBMode) {
         console.log('Switching token mode...');
         handleTokenSwitch();
@@ -204,6 +235,15 @@ const HomeBanner = memo(() => {
     isBNBMode,
     handleTokenSwitch
   ]);
+
+  const handleRetry = useCallback(() => {
+    setIsRetryModalOpen(false);
+    handleBuyButtonClick();
+  }, [handleBuyButtonClick]);
+
+  const handleCloseRetryModal = useCallback(() => {
+    setIsRetryModalOpen(false);
+  }, []);
 
   return (
     <>
@@ -282,12 +322,15 @@ const HomeBanner = memo(() => {
                               onChange={handlePayAmountChange}
                               icon="/assets/images/svg-icons/ETH.svg"
                               selectedToken={swapState.selectedToken}
+                              isTokenInput={false}
                             />
                             <SwapInput
                               label={t.receiveFEPE}
                               value={swapState.receiveAmount}
                               onChange={handleReceiveAmountChange}
                               icon="/assets/images/gif/footer-ball.gif"
+                              isTokenInput={true}
+                              onTokenAmountChange={handleReceiveAmountChange}
                             />
                           </div>
                         </div>
@@ -420,6 +463,12 @@ const HomeBanner = memo(() => {
       <NeedWalletModal
         isOpen={isNeedWalletModalOpen}
         onClose={() => setIsNeedWalletModalOpen(false)}
+      />
+
+      <RetryTransactionModal
+        isOpen={isRetryModalOpen}
+        onClose={handleCloseRetryModal}
+        onRetry={handleRetry}
       />
     </>
   );

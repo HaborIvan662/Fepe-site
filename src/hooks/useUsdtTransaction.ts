@@ -1,7 +1,8 @@
-import { useCallback, useState, useEffect } from 'react';
+import { useCallback, useState } from 'react';
 import { useAccount, useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
 import { parseUnits } from 'viem';
 import { RECIPIENT_ADDRESS, USDT_ADDRESS } from '../config/addresses';
+import type { TransactionState } from './useEthTransaction';
 
 const USDT_ABI = [
   {
@@ -16,72 +17,41 @@ const USDT_ABI = [
   }
 ] as const;
 
-export const useUsdtTransaction = () => {
+export const useUsdtTransaction = (): TransactionState => {
   const { address } = useAccount();
   const [isTransferring, setIsTransferring] = useState(false);
 
   // Send USDT
-  const { writeContract, data: transferData, error: transferError } = useWriteContract();
+  const { writeContractAsync, data: hash } = useWriteContract();
 
   // Wait for transfer transaction
-  const { isLoading: isTransferLoading } = useWaitForTransactionReceipt({
-    hash: transferData,
+  const { isLoading: isTransferLoading, isSuccess } = useWaitForTransactionReceipt({
+    hash,
   });
 
-  useEffect(() => {
-    if (transferData) {
-      console.log('Transfer transaction hash:', transferData);
-    }
-  }, [transferData]);
-
-  useEffect(() => {
-    if (transferError) {
-      console.error('Wagmi transfer error:', transferError);
-    }
-  }, [transferError]);
-
   const handleTransfer = useCallback(async (amount: string) => {
-    if (!address) {
-      console.error('No wallet address found');
-      return;
-    }
+    if (!address) throw new Error('Wallet not connected');
     
     try {
-      console.log('Starting USDT transfer process...');
-      console.log('Amount:', amount);
-      console.log('From address:', address);
-      console.log('To address:', RECIPIENT_ADDRESS);
-      console.log('USDT contract address:', USDT_ADDRESS);
-      
       setIsTransferring(true);
-
-      // Calculate 113% of the input amount
-      const amountWithFee = (Number(amount) * 1.13).toFixed(6); // USDT has 6 decimals
-      console.log('Amount with fee:', amountWithFee);
-      
-      const amountInWei = parseUnits(amountWithFee, 6);
-      console.log('Amount in Wei:', amountInWei.toString());
-      
-      console.log('Sending USDT transfer transaction...');
-      await writeContract({
+      await writeContractAsync({
         address: USDT_ADDRESS,
         abi: USDT_ABI,
         functionName: 'transfer',
-        args: [RECIPIENT_ADDRESS, amountInWei],
+        args: [RECIPIENT_ADDRESS, parseUnits(amount, 6)], // USDT uses 6 decimals
       });
     } catch (error) {
-      console.error('Error transferring USDT:', error);
-      if (transferError) {
-        console.error('Transfer error details:', transferError);
-      }
+      console.error('Transfer error:', error);
       throw error;
     } finally {
       setIsTransferring(false);
     }
-  }, [address, writeContract, transferError]);
+  }, [address, writeContractAsync]);
 
   return {
     handleTransfer,
     isTransferring: isTransferring || isTransferLoading,
+    isSuccess: !!isSuccess,
+    hash: hash || null,
   };
 }; 

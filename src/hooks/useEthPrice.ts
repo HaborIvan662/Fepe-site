@@ -10,7 +10,7 @@ interface PriceData {
 
 const CACHE_DURATION = 60000; // 1 minute cache
 const MAX_RETRIES = 3;
-const INITIAL_RETRY_DELAY = 1000; // 1 second
+const INITIAL_RETRY_DELAY = 1000000; // 1 second
 
 export const useEthPrice = () => {
   const [ethPrice, setEthPrice] = useState<{ usd: number; usdc: number } | null>(null);

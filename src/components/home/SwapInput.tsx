@@ -4,22 +4,48 @@ interface SwapInputProps {
   onChange: (value: string) => void;
   icon?: string;
   selectedToken?: string;
+  isTokenInput?: boolean;
+  onTokenAmountChange?: (value: string) => void;
 }
 
-const SwapInput = ({ label, value, onChange, icon, selectedToken }: SwapInputProps) => {
+const SwapInput = ({ 
+  label, 
+  value, 
+  onChange, 
+  icon, 
+  selectedToken,
+  isTokenInput = false,
+  onTokenAmountChange
+}: SwapInputProps) => {
   const getTokenLabel = () => {
-    if (selectedToken) {
+    if (selectedToken && !isTokenInput) {
       return `Pay with ${selectedToken.toUpperCase()}`;
     }
     return label;
   };
 
   const getTokenIcon = () => {
-    if (selectedToken) {
-      if(selectedToken==="ETH" || selectedToken==="BNB")      return `/assets/images/svg-icons/${selectedToken}.svg`;
-      else return `/assets/images/svg-icons/${selectedToken.toLowerCase()}.svg`;
+    if (selectedToken && !isTokenInput) {
+      if(selectedToken === "ETH" || selectedToken === "BNB") {
+        return `/assets/images/svg-icons/${selectedToken}.svg`;
+      }
+      return `/assets/images/svg-icons/${selectedToken.toLowerCase()}.svg`;
     }
     return icon;
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = e.target.value;
+    
+    if (isTokenInput) {
+      const parsedValue = newValue ? Math.floor(parseFloat(newValue)).toString() : '';
+      onChange(parsedValue);
+      if (onTokenAmountChange) {
+        onTokenAmountChange(parsedValue);
+      }
+    } else {
+      onChange(newValue);
+    }
   };
 
   return (
@@ -29,9 +55,10 @@ const SwapInput = ({ label, value, onChange, icon, selectedToken }: SwapInputPro
         <input
           type="number"
           value={value}
-          onChange={(e) => onChange(e.target.value)}
+          onChange={handleInputChange}
           placeholder="0"
           className="w-full p-3 border-[3px] border-black rounded-[16px] text-black bg-white/90"
+          step={isTokenInput ? "1" : "0.000001"}
         />
         {/* {showMax && (
           <button className="absolute right-2 top-1/2 -translate-y-1/2 text-sm text-black hover:opacity-80">
