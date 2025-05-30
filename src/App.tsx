@@ -3,7 +3,8 @@ import { lazy, Suspense } from 'react'
 import HomeBanner from './components/Section/HomeBanner'
 import ConsentRevisitButton from './components/ConsentRevisitButton'
 import WalletModalRoot from './components/WalletModalRoot'
-import WarningModal from './components/WarningModal'
+import WarningModal from './components/Modal/WarningModal'
+import AboutToken from './components/Section/AboutToken'
 
 // Lazy load components that are not immediately visible
 const FeaturedSection = lazy(() => import('./components/Section/FeaturedSection'))
@@ -28,6 +29,7 @@ function App() {
         <GroupStage />
         <AboutSection />
         <KeyFeatures />
+        <AboutToken />
         <TokenomicsSection />
         <RoadmapSection />
         <HowToBuy />
